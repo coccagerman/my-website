@@ -1,0 +1,184 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+
+    ul {
+        display: flex;
+        list-style: none;
+
+        li {
+            margin: 0 1rem;
+            a {
+                font-size: 1.2rem;
+                margin-top: .1rem;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    margin-top: .1rem;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform .25s ease-in-out;
+                }
+                  
+                &:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: left;
+                }
+            }
+        }
+    }
+
+    .language-selector {
+        button {
+            font-size: 1.2rem;
+            margin: 0 .3rem;
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+
+            &::after {
+                content: '';
+                display: block;
+                height: 2px;
+                margin-top: .1rem;
+                transform: scaleX(0);
+                transform-origin: right;
+                transition: transform .25s ease-in-out;
+            }
+              
+            &:hover::after {
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+        }
+
+        .selected {
+            &::after {
+                transform: scaleX(1);
+            }
+        }
+    }
+
+    .dark-mode-toggle-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.dark {
+          background-color: #27272A;
+        }
+
+        .toggle {
+            display: block;
+            width: 3rem;
+            height: 3rem;
+            background-color: #FDF5F0;
+            border-radius: 20px;
+            transition: all 300ms ease-in-out;
+            border: 2px solid #F1F5F9;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            z-index: 1;
+            .dark & {
+              border-color: #475569;
+            }
+            &::before {
+              content: '';
+              position: absolute;
+              top: 0.5rem;
+              left: 0.5rem;
+              height: 1rem;
+              width: 1rem;
+              background-image: linear-gradient(to top left, #F59E0B, #FEF3C7);
+              border-radius: 50%;
+              transition: all 400ms ease-in-out;
+            }
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: -2.1rem;
+              left: 0;
+              width: 3rem;
+              height: 3rem;
+              border-radius: 45%;
+              background-image: linear-gradient(to left, #7DD3FC, #0EA5E9);
+              animation: wave 15s infinite linear;
+              transition: all 300ms ease-in-out;
+            }
+          }
+          .toggle-checkbox {
+            display: none;
+          }
+          .toggle-checkbox:checked ~ .toggle {
+            background-color: #1F2937;
+          }
+          .toggle-checkbox:checked ~ .toggle::before {
+            background-image: linear-gradient(to top left, #E5E7EB, #D1D5DB);
+            left: 1.5rem;
+          }
+          .toggle-checkbox:checked ~ .toggle::after {
+            background-image: linear-gradient(to left, #64748B, #334155);
+            bottom: -1.8rem;
+          }
+          @keyframes wave {
+            from { transform: rotate(0deg);}
+            from { transform: rotate(360deg);}
+          }
+    }
+}
+
+.header-light {
+    background-color: white;
+    color: black;
+
+    ul {
+        li {
+            a {
+                color: black;
+                &::after{
+                    background: black;
+                }
+            }
+        }
+    }
+    
+    .language-selector {
+        button {
+            color: black;
+
+            &::after{
+                background: black;
+            }
+        }
+    }
+}
+
+.header-dark {
+    background-color: black;
+    color: white;
+
+    ul {
+        li {
+            a {
+                color: white;
+                &::after{
+                    background: white;
+                }
+            }
+        }
+    }
+    
+    .language-selector {
+        button {
+            color: white;
+
+            &::after{
+                background: white;
+            }
+        }
+    }
+}

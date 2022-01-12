@@ -1,0 +1,92 @@
+.contactPage {
+    height: 88.2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+
+    a {
+        font-weight: 600;
+    }
+
+    .email-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 6rem;
+            margin: 2rem 0;
+            transition: .3s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .networks {
+        margin-bottom: 1rem;
+    }
+
+    .networks-container {
+        p {
+            margin: .2rem 0;
+            span {
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    .btn-container {
+        margin-top: 3rem;
+
+        .btn {
+            margin: 0 1.5rem;
+        }
+    }
+}
+
+.contactPage-light {
+    background-color: white;
+    color: black;
+
+    a {
+        color: black;
+    }
+
+    .btn-container {
+        .btn {
+            border: black solid 2px;
+            color: black;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
+
+.contactPage-dark {
+    background-color: #1f2028;
+    color: white;
+
+    a {
+        color: white;
+    }
+
+    .btn-container {
+        .btn {
+            border: white solid 2px;
+            color: white;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
