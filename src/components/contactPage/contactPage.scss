@@ -49,6 +49,54 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .contactPage {
+        height: auto;
+    
+        .email-container {
+            text-align: center;
+            margin-top: 3rem;
+    
+            img {
+                width: 6rem;
+                margin: 2rem 0;
+                transition: .3s;
+    
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    
+        .networks {
+            margin-bottom: .5rem;
+            text-align: center;
+        }
+    
+        .networks-container {
+            font-size: 1.05rem;
+            
+            p {
+                span {
+                    margin-right: .25rem;
+                }
+            }
+        }
+    
+        .btn-container {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .btn {
+                margin: .5rem 0;
+            }
+        }
+    }
+}
+
 .contactPage-light {
     background-color: white;
     color: black;

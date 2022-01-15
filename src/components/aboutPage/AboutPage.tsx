@@ -40,9 +40,9 @@ const AboutPage: React.FC = () => {
             <div className='textAndPicture content-section'>
                 <div className='text'>
                     {englishLanguage ?
-                        <p><span className='firstWord'>Hi!</span>My name is Germán and I'm a fullstack developer from Buenos Aires, Argentina.</p>
+                        <p className='firstParagraph'><span className='firstWord'>Hi!</span>My name is Germán and I'm a fullstack developer from Buenos Aires, Argentina.</p>
                     :
-                        <p><span className='firstWord'>Hola!</span>Mi nombre es Germán y soy un desarrollador full stack de Buenos Aires, Argentina.</p>
+                        <p className='firstParagraph'><span className='firstWord'>Hola!</span>Mi nombre es Germán y soy un desarrollador full stack de Buenos Aires, Argentina.</p>
                     }
 
                     {englishLanguage ?
@@ -88,7 +88,7 @@ const AboutPage: React.FC = () => {
 
             <div className='stack content-section' id='stack'>
                 <h2>{englishLanguage ? 'My stack' : 'Mi stack'}</h2>
-                <div className='icon-section'>
+                <div className='icon-section firstIcon-section'>
                     <h3>{englishLanguage ? 'Lenguages:' : 'Lenguajes:'}</h3>
 
                     <div className='icons-container'>
@@ -235,7 +235,7 @@ const AboutPage: React.FC = () => {
             </div>
 
             <div className='btn-container'>
-                <Link to='/projects'><button className='btn'>{englishLanguage ? 'Proyectos' : 'Projects'}</button></Link>
+                <Link to='/projects'><button className='btn'>{englishLanguage ? 'Projects' : 'Proyectos'}</button></Link>
                 <Link to='/blog'><button className='btn'>Blog</button></Link>
             </div>
         </section>

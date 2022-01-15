@@ -1,3 +1,6 @@
+/* Bootstrap */
+@import "~bootstrap/scss/bootstrap";
+
 /* General styles */
 @import './generalStylesheets/generalStyles.scss';
 
@@ -12,3 +15,6 @@
 
 /* Blog page */
 @import './components/blogPage/blogPage.scss';
+
+/* Blog page */
+@import './components/blogPage/errorMsg/errorMsg.scss';

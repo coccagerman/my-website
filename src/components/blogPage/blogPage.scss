@@ -1,3 +1,252 @@
 .blogPage {
+    min-height: 87.3vh;
+
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+
+        .intro {
+            margin: 2rem auto;
+            width: 60%;
+            font-size: 1.25rem;
+
+            p {
+                margin: .75rem 0;
+            }
+        }
+
+        .loader {
+            margin-top: 5rem;
+            .big-circle {
+                width: 8rem;
+                height: 8rem;
+                border-radius: 50%;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                position:relative;
+                animation: bigcircle 1.2s linear infinite;
+            }
+            .small-circle {
+                position:relative;
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+            }
+            
+            @keyframes bigcircle {
+                0% {transform: rotate(0deg);}
+                100% {transform: rotate(360deg);}
+            }
+
+            p {
+                text-align: center;
+                margin: 1rem 0;
+            }
+        }
+        
+        .posts {
+            .accordion {
+                width: 70rem;
+                margin: 0 auto;
+                font-size: 1rem;
+
+                .article {
+                    margin: 1rem 0;
+                    border: none;
+                    background-color: transparent;
+                    
+                    .accordion-button {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        background-color: lightgray;
+                        color: black;
+                        position: relative;
+                        height: 5.5rem;
+                        border-radius: .5rem .5rem 0 0;
+                        transition: .3s;
+                        
+                        h1 {
+                            font-size: 1.75rem;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            bottom: 1rem;
+                            right: 1rem;
+                        }
+                    }
+
+                    .collapsed {
+                        border-radius: .5rem;
+                    }
+                    
+                    .accordion-body {
+                        color: black;
+                        background-color: lightgray;
+                        border-radius: 0 0 .5rem .5rem;
+
+                        h2 {
+                            font-size: 1.5rem;
+                        }
+
+                        img {
+                            max-width: 50rem;
+                            display: block;
+                            margin: 1rem auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        a {
+            font-weight: 600;
+        }
+
+        .btn-container {
+            margin-top: 3rem;
+
+            .btn {
+                margin: 0 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .blogPage {
     
+        .page-container {
+            padding: 1rem 0;
+    
+            .intro {
+                margin: 1rem auto;
+                width: 80%;
+            }
+    
+            .loader {
+                margin-top: 2rem;
+            }
+            
+            .posts {
+                max-width: 90%;
+
+                .accordion {
+                    width: 100%;
+                    margin: 0 auto;
+                    font-size: 1rem;
+    
+                    .article {
+                        margin: 1rem 0;
+                        
+                        .accordion-button {
+                            height: 5.5rem;
+                            
+                            h1 {
+                                font-size: 1.05rem;
+                            }
+
+                            p {
+                                font-size: .9rem;
+                            }
+    
+                        }
+    
+                        .accordion-body {
+    
+                            h2 {
+                                font-size: 1.5rem;
+                            }
+    
+                            img {
+                                max-width: 15rem;
+                                margin: .5rem auto;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            a {
+                font-weight: 600;
+            }
+    
+            .btn-container {
+                margin-top: 3rem;
+    
+                .btn {
+                    margin: 0 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.blogPage-light {
+    background-color: white;
+    color: black;
+
+    a {
+        color: black;
+    }
+
+    .btn-container {
+        .btn {
+            border: black solid 2px;
+            color: black;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+
+    .loader {
+        .big-circle {
+            border: 5px solid black;
+            border-color: black transparent black black;
+        }
+        .small-circle {
+            border: 5px solid black;
+            border-color: black black transparent black;
+        }
+    }
+}
+
+.blogPage-dark {
+    background-color: #1f2028;
+    color: white;
+
+    a {
+        color: white;
+    }
+
+    .btn-container {
+        .btn {
+            border: white solid 2px;
+            color: white;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+
+    .loader {
+        .big-circle {
+            border: 5px solid white;
+            border-color: white transparent white white;
+        }
+        .small-circle {
+            border: 5px solid white;
+            border-color: white white transparent white;
+        }
+    }
 }

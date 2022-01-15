@@ -1,7 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useContext } from 'react'
 import Context from '../../context/Context'
 import { useQuery, gql } from '@apollo/client'
+import Article from './article/Article'
+import Accordion from 'react-bootstrap/Accordion'
+import ErrorMsg from './errorMsg/ErrorMsg'
 
 const BlogPage: React.FC = () => {
 
@@ -32,29 +35,56 @@ const BlogPage: React.FC = () => {
         console.log(error)
     }
 
+    interface BlogArticle {
+        __typename: string,
+        title: string,
+        dateAdded: string,
+        coverImage: string,
+        contentMarkdown: string
+    }    
+
     return (
-        <section className='blogPage'>
+        <section className={darkModeOn ? 'blogPage blogPage-dark' : 'blogPage blogPage-light'}>
+            <div className='page-container'>
+                {!error ? 
+                    <div className='intro'>
+                        {englishLanguage ?
+                            <>
+                                <p>I think one of the best ways to deepen your knowledge of any subject is to explain it to someone else. This is the purpose of my blog. Here I explore and write the the different topics that I go through in my learning path as a developer.</p>
 
-            <div className='intro'>
-                {englishLanguage ?
-                    <>
-                        <p>I think one of the best ways to deepen your knowledge of any subject is to explain it to someone else, this is the purpose of my blog. Here I explore and write the the different topics that I go through in my learning path as a developer.</p>
+                                <p>In this page you can see some of the last articles I wrote. To see all my articles you can visit <a href='https://gercocca.hashnode.dev/' target='_blank'>gercocca.hashnode.dev</a></p>
+                            </>
+                        :
+                            <>
+                                <p>Creo que una de las mejores maneras de aprender algo nuevo es tratar de explicárselo a otra persona. Esta es la finalidad de mi blog. Acá voy registrando y explorando en profundidad los distintos temas que voy recorriendo en mi camino de aprendizaje como desarrollador.</p>
 
-                        <p>In this page you can see some of the last articles I wrote. To see all my articles you can visit <a href='https://gercocca.hashnode.dev/' target='_blank'>gercocca.hashnode.dev</a></p>
-                    </>
+                                <p>En esta página podés ver algunos de los últimos artículos que escribí. Para ver todos mis artículos podés visitar <a href='https://gercocca.hashnode.dev/' target='_blank'>gercocca.hashnode.dev</a></p>
+
+                                <p>pd: Escribo en inglés para llegar a un público más amplio y matener fluidez con el idioma. ;)</p>
+                            </>
+                        }
+                    </div>
                 :
-                    <>
-                        <p>Creo que una de las mejores maneras de aprender algo nuevo es tratar de explicárselo a otra persona, esta es la finalidad de mi blog. Acá voy registrando y explorando en profundidad los distintos temas que voy recorriendo en mi camino de aprendizaje como desarrollador.</p>
-
-                        <p>En esta página podés ver algunos de los últimos artículos que escribí. Para ver todos mis artículos podés visitar <a href='https://gercocca.hashnode.dev/' target='_blank'>gercocca.hashnode.dev</a></p>
-
-                        <p>pd: Escribo en inglés para llegar a un público más amplio y matener fluidez con el idioma. ;)</p>
-                    </>
+                    null
                 }
-            </div>
-            
-            <div className='posts'>
-                {data ? data.user.publication.posts.map((post: Object) => <p>This is a post</p>) : null}
+                
+                <div className='posts'>
+                {data ?
+                    <Accordion>
+                        {data.user.publication.posts.map((post: BlogArticle, i: number) => <Article blogArticle={post} key={i} index={i} />)}   
+                    </Accordion>
+                :
+                    loading ?
+                        <div className='loader'>
+                            <div className='big-circle'>
+                                <div className='small-circle'></div>
+                            </div>
+                            <p>{englishLanguage ? 'Loading ...' : 'Cargando ...'}</p>
+                        </div>
+                    :
+                        <ErrorMsg />
+                }
+                </div>
             </div>
         </section>
     )
