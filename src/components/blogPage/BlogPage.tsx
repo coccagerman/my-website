@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { useContext } from 'react'
 import Context from '../../context/Context'
 import { useQuery, gql } from '@apollo/client'
@@ -9,8 +8,6 @@ import ErrorMsg from './errorMsg/ErrorMsg'
 const BlogPage: React.FC = () => {
 
     const { darkModeOn, englishLanguage } = useContext(Context)
-
-    const [blogPosts, setBlogPosts] = useState([])
 
     const GET_USER_ARTICLES = gql `
         query GetUserArticles($page: Int!) {
@@ -28,12 +25,6 @@ const BlogPage: React.FC = () => {
     `
 
     const { loading, error, data } = useQuery(GET_USER_ARTICLES, { variables: { page: 0 } })
-
-    if (loading) console.log('loading ' + loading)
-    if (error) {
-        console.log('error')
-        console.log(error)
-    }
 
     interface BlogArticle {
         __typename: string,

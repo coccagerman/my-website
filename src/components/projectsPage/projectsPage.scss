@@ -1,0 +1,108 @@
+.projectsPage {
+    min-height: 88vh;
+
+    .intro {
+        width: 55%;
+        padding: 4rem 0 2rem 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 1.5rem;
+            max-width: 55rem;
+
+            a {
+                font-weight: 600;
+            }
+        }
+
+        img {
+            width: 10rem;
+            margin-left: 2rem;
+        }
+    }
+
+    .cards-container {
+        width: 55%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .card {
+            color: black;
+            height: 28rem;
+            margin: 0 1rem;
+
+            .cardTitle {
+                text-align: center;
+                font-weight: 600;
+            }
+
+            .cardText {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .btn-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .btn {
+                    position: absolute;
+                    bottom: .5rem;
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .projectsPage {
+        
+    }
+    
+}
+
+.projectsPage-light {
+    background-color: white;
+    color: black;
+
+    a {
+        color: black;
+    }
+
+    .btn {
+        border: black solid 2px;
+        color: black;
+
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+.projectsPage-dark {
+    background-color: #1f2028;
+    color: white;
+
+    a {
+        color: white;
+    }
+
+    .btn {
+        border: black solid 2px;
+        color: black;
+
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+}

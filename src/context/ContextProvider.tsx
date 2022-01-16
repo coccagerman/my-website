@@ -5,7 +5,7 @@ import Context from './Context'
 const ContextProvider: React.FC = ({children}) => {
 
     const [darkModeOn, setDarkModeOn] = useState(true)
-    const [englishLanguage, setEnglishLanguage] = useState(false)
+    const [englishLanguage, setEnglishLanguage] = useState(true)
 
     return (
         <Context.Provider value={{

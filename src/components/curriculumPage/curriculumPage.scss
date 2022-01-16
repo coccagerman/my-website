@@ -1,0 +1,289 @@
+.curriculumPage {
+
+    .bold {
+        font-weight: 600;
+    }
+
+    .intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem;
+        width: 70%;
+        margin: 0 auto;
+
+        img {
+            width: 20rem;
+            margin-right: 3rem;
+            border-radius: 2.5%;
+        }
+
+        p {
+            max-width: 40rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    .experience {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 3rem;
+
+        h2 {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .experienceItem {
+            margin-top: 2rem;
+            width: 70%;
+            margin: 0 auto;
+
+            .experienceLogoAndTitle {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 1.5rem;
+
+                img {
+                    width: 5rem;
+                    border-radius: 2.5%;
+                    margin-right: 3rem;
+                }
+
+                .experienceTitle {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .education {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 3rem;
+
+        h2 {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .educationItem {
+            margin-top: 2rem;
+            width: 70%;
+            margin: 0 auto;
+
+            .educationLogoAndTitle {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 1.5rem;
+
+                img {
+                    width: 5rem;
+                    border-radius: 2.5%;
+                    margin-right: 3rem;
+                }
+
+                .logoRight {
+                    margin-right: 0;
+                    margin-left: 3rem;
+                }
+
+                .educationTitle {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .previousExperience {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 3rem;
+
+        h2 {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        p, ul {
+            width: 70%;
+            margin: .75rem auto;
+        }
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 0 5rem 0;
+
+        .btn {
+            margin: 0 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .curriculumPage {
+ 
+        .intro {
+            width: 90%;
+    
+            img {
+                display: none;
+            }
+    
+            p {
+                max-width: auto;
+            }
+        }
+    
+        .experience {
+            width: 90%;
+            margin-top: 2rem;
+        
+            .experienceItem {
+                margin-top: 1.5rem;
+                width: 100%;
+    
+                .experienceLogoAndTitle {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 1.5rem;
+    
+                    img {
+                        width: 3.5rem;
+                        margin-right: 1rem;
+                    }
+    
+                    .experienceTitle {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    
+        .education {
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 3rem;
+    
+            h2 {
+                text-align: center;
+                font-size: 3rem;
+            }
+    
+            .educationItem {
+                margin-top: 2rem;
+                width: 70%;
+                margin: 0 auto;
+    
+                .educationLogoAndTitle {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 1.5rem;
+    
+                    img {
+                        width: 5rem;
+                        border-radius: 2.5%;
+                        margin-right: 3rem;
+                    }
+    
+                    .logoRight {
+                        margin-right: 0;
+                        margin-left: 3rem;
+                    }
+    
+                    .educationTitle {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    
+        .previousExperience {
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 3rem;
+    
+            h2 {
+                text-align: center;
+                font-size: 3rem;
+            }
+    
+            p, ul {
+                width: 70%;
+                margin: .75rem auto;
+            }
+        }
+    
+        .btn-container {
+            flex-direction: column;
+            padding: 3rem 0 5rem 0;
+    
+            .btn {
+                margin: 1rem 0;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    
+}
+
+.curriculumPage-light {
+    background-color: white;
+    color: black;
+
+    a {
+        color: black;
+    }
+
+    .btn-container {
+        .btn {
+            border: black solid 2px;
+            color: black;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
+
+.curriculumPage-dark {
+    background-color: #1f2028;
+    color: white;
+
+    a {
+        color: white;
+    }
+
+    .btn-container {
+        .btn {
+            border: white solid 2px;
+            color: white;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
