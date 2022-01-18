@@ -1,0 +1,21 @@
+.myWebsiteProject {
+    .frontPage, .gif {
+        width: 45rem;
+        display: block;
+        margin: 1rem auto;
+        border-radius: 1.5%;
+        border: black solid 2px;
+    }
+
+    .gif-container {
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .myWebsiteProject {
+        .frontPage, .gif {
+            width: 20rem;
+        }
+    }
+}

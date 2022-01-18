@@ -31,11 +31,31 @@
         justify-content: center;
         align-items: center;
         position: relative;
+        padding-bottom: 3rem;
 
         .card {
             color: black;
             height: 28rem;
             margin: 0 1rem;
+            transition: .3s;
+
+            &:hover {
+                box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.49);
+            }
+
+            .cardImg {
+                height: 10rem;
+            }
+
+            .cardImg-helpr {
+                background: url("../../assets/helpr/frontPage.png") no-repeat 50%;
+                background-size: cover;
+            }
+
+            .cardImg-myWebsite {
+                background: url("../../assets/myWebsite/frontPage.png") no-repeat 50%;
+                background-size: cover;
+            }
 
             .cardTitle {
                 text-align: center;
@@ -60,11 +80,54 @@
             }
         }
     }
+
+    /* Styles for project pages */
+    .bold {
+        font-weight: 600;
+    }
+
+    .features {
+        margin: 2rem auto;
+        width: 55%;
+        font-size: 1.2rem;
+        max-width: 55rem;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .projectsPage {
-        
+        min-height: auto;
+    
+        .intro {
+            width: 90%;
+            padding: 2rem 0;
+            flex-direction: column;
+    
+            p {
+                max-width: auto;
+            }
+    
+            img {
+                display: none;
+            }
+        }
+    
+        .cards-container {
+            width: 90%;
+            flex-direction: column;
+            margin: 1rem auto;
+    
+            .card {
+                margin: 1.5rem 0;
+            }
+        }
+    
+        /* Styles for project pages */  
+        .features {
+            margin: 1.5rem auto;
+            width: 90%;
+            max-width: auto;
+        }
     }
     
 }

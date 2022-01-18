@@ -88,11 +88,6 @@
                     margin-right: 3rem;
                 }
 
-                .logoRight {
-                    margin-right: 0;
-                    margin-left: 3rem;
-                }
-
                 .educationTitle {
                     display: flex;
                     flex-direction: column;
@@ -170,25 +165,27 @@
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+
+                        h3 {
+                            font-size: 1.05rem;
+                        }
+
+                        p {
+                            padding: 0;
+                            margin: 0;
+                        }
                     }
                 }
             }
         }
     
         .education {
-            width: 70%;
-            margin: 0 auto;
-            margin-top: 3rem;
-    
-            h2 {
-                text-align: center;
-                font-size: 3rem;
-            }
-    
+            width: 90%;
+            margin-top: 2rem;
+        
             .educationItem {
                 margin-top: 2rem;
-                width: 70%;
-                margin: 0 auto;
+                width: 100%;
     
                 .educationLogoAndTitle {
                     display: flex;
@@ -197,14 +194,8 @@
                     margin-bottom: 1.5rem;
     
                     img {
-                        width: 5rem;
-                        border-radius: 2.5%;
-                        margin-right: 3rem;
-                    }
-    
-                    .logoRight {
-                        margin-right: 0;
-                        margin-left: 3rem;
+                        width: 3.5rem;
+                        margin-right: 1rem;
                     }
     
                     .educationTitle {
@@ -212,13 +203,22 @@
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+
+                        h3 {
+                            font-size: 1.05rem;
+                        }
+
+                        p {
+                            padding: 0;
+                            margin: 0;
+                        }
                     }
                 }
             }
         }
     
         .previousExperience {
-            width: 70%;
+            width: 90%;
             margin: 0 auto;
             margin-top: 3rem;
     
@@ -228,7 +228,7 @@
             }
     
             p, ul {
-                width: 70%;
+                width: 100%;
                 margin: .75rem auto;
             }
         }

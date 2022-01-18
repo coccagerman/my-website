@@ -73,11 +73,11 @@ const CurriculumPage: React.FC = () => {
 
                         <article className='educationItem'>
                             <div className='educationLogoAndTitle'>
+                            <a href='https://www.coderhouse.com/' target='_blank'><img src={coderhouseLogo} alt='Coderhouse logo' /></a>
                                 <div className='educationTitle'>
                                     <h3>Full stack development - Coderhouse</h3>
                                     <p>Sep 2020 - Dec 2021</p>
                                 </div>
-                                <a href='https://www.coderhouse.com/' target='_blank'><img className='logoRight' src={coderhouseLogo} alt='Coderhouse logo' /></a>
                             </div>
 
                             <p>At <span className='bold'><a href='https://www.coderhouse.com/' target='_blank'>Coderhouse</a></span> I took a series of courses of 400 hs. in total. I learned about front end development with react, mobile development with react native and back end development with node and express. Besides, I also had the chance to work on some projects as a freelancer for NGOs and small companies. Here I was able to put my learnings into practice and have a first professional experience as a developer.</p>
@@ -101,11 +101,11 @@ const CurriculumPage: React.FC = () => {
 
                         <article className='educationItem'>
                             <div className='educationLogoAndTitle'>
+                            <a href='https://www.coderhouse.com/' target='_blank'><img src={coderhouseLogo} alt='Coderhouse logo' /></a>
                                 <div className='educationTitle'>
                                     <h3>Desarrollo full stack - Coderhouse</h3>
                                     <p>Sep 2020 - Dic 2021</p>
                                 </div>
-                                <a href='https://www.coderhouse.com/' target='_blank'><img src={coderhouseLogo} className='logoRight' alt='Coderhouse logo' /></a>
                             </div>
 
                             <p>En <span className='bold'><a href='https://www.coderhouse.com/' target='_blank'>Coderhouse</a></span> realicé una serie de cursos por un total de 400 hs. Aprendí sobre desarrollo front end con react, desarrollo mobile con react native y desarrollo back end con node y express. Además tuve la oportunidad de trabajar en algunos proyectos como freelancer para PYMEs y ONGs, donde pude plasmar mi aprendizaje y tener una primer experiencia profesional como desarrollador.</p>
