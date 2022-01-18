@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react'
 import Context from '../../context/Context'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Header: React.FC = () => {
 
@@ -20,8 +20,8 @@ const Header: React.FC = () => {
 
     return (
         <header className={darkModeOn ? 'header header-dark' : 'header header-light'}>
-            <h1 className='desktop-logo'>Germán Cocca</h1>
-            <h1 className='mobile-logo'>G</h1>
+            <Link to='/'><h1 className='desktop-logo'>Germán Cocca</h1></Link>
+            <Link to='/'><h1 className='mobile-logo'>G</h1></Link>
 
             <ul className='desktop-menu'>
                 <li><NavLink to='/'>{englishLanguage ? 'About' : 'Sobre mi'}</NavLink></li>

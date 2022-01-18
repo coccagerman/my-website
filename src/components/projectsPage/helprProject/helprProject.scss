@@ -1,0 +1,56 @@
+.helprProject {
+
+    h1 {
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    .intro {
+        width: 55%;
+        padding: 4rem 0 2rem 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 1.5rem;
+            max-width: 55rem;
+        }
+    }
+
+    .frontPage, .gif {
+        width: 45rem;
+        display: block;
+        margin: 1rem auto;
+        border-radius: 1.5%;
+        border: black solid 2px;
+    }
+
+    .gif-container {
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .helprProject {
+
+        .intro {
+            width: 90%;
+            padding: 2rem 0;
+    
+            p {
+                max-width: auto;
+            }
+        }
+
+        .frontPage {
+            width: 20rem;
+        }
+
+        .gif {
+            width: 16rem;
+        }
+    }
+}

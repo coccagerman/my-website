@@ -10,39 +10,41 @@ const MyWebsiteProject: React.FC = () => {
     return (
         <section className={darkModeOn ? 'myWebsiteProject projectsPage projectsPage-dark' : 'myWebsiteProject projectsPage projectsPage-light'}>
 
+            <h1>{englishLanguage ? 'My website' : 'Mi sitio web'}</h1>
+
             <div className='intro'>
                 {englishLanguage ?
                     <p>I always wanted to build my own website to showcase my projects and experience, so I defenitely enjoyed building this. Moreover, I used this project to learn how to use react with <span className='bold'>typescript</span>, test react projects with <span className='bold'>jest</span> and <span className='bold'>react testing library</span> and consume <span className='bold'>GraphQL</span> APIs with <span className='bold'>Apollo client</span>.</p>
                 :
-                    <p>Siempre quise crear mi propio sitio para mostrar mis proyectos y experiencia, así que disfruté bastante con este proyecto. Utilicé este proyecto sobre todo para aprender cómo usar react con <span className='bold'>typescript</span>, testear proyectos de react con <span className='bold'>jest</span> y <span className='bold'>react testing library</span> y consumir APIs <span className='bold'>GraphQL</span> con <span className='bold'>Apollo client</span>.</p>
+                    <p>Siempre quise crear mi propio sitio para mostrar mis proyectos y experiencia, así que me gustó bastante crear esto. Utilicé este proyecto sobre todo para aprender cómo usar react con <span className='bold'>typescript</span>, testear proyectos de react con <span className='bold'>jest</span> y <span className='bold'>react testing library</span> y consumir APIs <span className='bold'>GraphQL</span> con <span className='bold'>Apollo client</span>.</p>
                 }
             </div>
 
             <img src={myWebsitefrontPage} className='frontPage' alt='Website front page' />
 
-            <div className='features'>
+            <div className='characteristics'>
                 {englishLanguage ?
                     <>
-                        <p>Main features:</p>
+                        <h2>Characteristics:</h2>
                         <ul>
-                            <li>Front end built with react and typescript.</li>
-                            <li>State management with redux.</li>
-                            <li>Navigation with react router.</li>
+                            <li>Front end built with React and Typescript.</li>
+                            <li>State management with Redux.</li>
+                            <li>Navigation with React router.</li>
                             <li>Fully responsive design and styling with SASS.</li>
                             <li>Blog articles served through <span className='bold'>Hashnode</span> GraphQL API, consumed with Apollo client.</li>
-                            <li>Tested with jest and react testing library.</li>
+                            <li>Tested with Jest and React testing library.</li>
                         </ul>
                     </>
                 :
                     <>
-                        <p>Principales características:</p>
+                        <h2>Características:</h2>
                         <ul>
-                            <li>Front end hecho con react y typescript.</li>
-                            <li>Gestión de estado con redux.</li>
-                            <li>Navegación con react router.</li>
+                            <li>Front end hecho con React y Typescript.</li>
+                            <li>Gestión de estado con Redux.</li>
+                            <li>Navegación con React router.</li>
                             <li>Diseño responsive y estilos con SASS.</li>
                             <li>Artículos de blog consumidos desde la API GraphQL <span className='bold'>Hashnode</span> con Apollo client.</li>
-                            <li>Testeado con jest y react testing library.</li>
+                            <li>Testeado con Jest y React testing library.</li>
                         </ul>
                     </>
                 }
@@ -50,6 +52,14 @@ const MyWebsiteProject: React.FC = () => {
             
             <div className='gif-container'>
                 <img src={blogArticlesGif} className='gif' alt='Website gif' />
+            </div>
+
+            <div className='fullCode'>
+                {englishLanguage ?
+                    <p>Full code can be found at <a href='https://github.com/coccagerman/my-website' target='_blank'>github.com/coccagerman/my-website</a></p>
+                :
+                    <p>El código completo se encuentra en <a href='https://github.com/coccagerman/my-website' target='_blank'>github.com/coccagerman/my-website</a></p>
+                }
             </div>
 
         </section>

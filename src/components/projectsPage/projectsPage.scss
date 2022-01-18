@@ -86,11 +86,29 @@
         font-weight: 600;
     }
 
-    .features {
+    .characteristics, .features {
         margin: 2rem auto;
         width: 55%;
         font-size: 1.2rem;
         max-width: 55rem;
+    }
+
+    .fullCode {
+        width: 55%;
+        padding: 2rem 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 1.5rem;
+            max-width: 55rem;
+
+            a {
+                font-weight: 600;
+            }
+        }
     }
 }
 
@@ -123,10 +141,17 @@
         }
     
         /* Styles for project pages */  
-        .features {
+        .characteristics, .features {
             margin: 1.5rem auto;
             width: 90%;
             max-width: auto;
+        }
+
+        .fullCode {
+            width: 90%;
+            p {
+                font-size: 1rem
+            }
         }
     }
     

@@ -263,6 +263,7 @@
             display: block;
             margin-bottom: -.5rem;
             padding: 0;
+            margin-left: -8rem;
         }
 
         .desktop-menu {
@@ -274,7 +275,7 @@
         }
 
         .dark-mode-toggle-container {
-            margin-left: -1rem;
+            margin-left: -8rem;
         }
    
         .hamburguer-icon {
@@ -389,6 +390,10 @@
     background-color: white;
     color: black;
 
+    a {
+        color: black;
+    }
+
     ul {
         li {
             a {
@@ -425,6 +430,10 @@
 .header-dark {
     background-color: black;
     color: white;
+
+    a {
+        color: white;
+    }
 
     ul {
         li {
