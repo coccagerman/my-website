@@ -52,7 +52,7 @@ const AboutPage: React.FC = () => {
                     }
 
                     {englishLanguage ?
-                        <p>I started learning about programming just out of curiosity at the middle of 2020, as a way to get the best out of the additional free time I had because of the lockout. At the beginning through <a href='https://www.freecodecamp.org/' target='_blank'>Freecodecamp</a> and then taking different courses at <a href='https://www.coderhouse.com/' target='_blank'>Coderhouse</a>, I learned more and more about it, and I just fell in love with it.</p>
+                        <p>I started learning about programming just out of curiosity at the middle of 2020, as a way to get the best out of the additional free time I had because of the lockout. At the beginning through <a href='https://www.freecodecamp.org/' target='_blank'>Freecodecamp</a> and then taking different courses at <a href='https://www.coderhouse.com/' target='_blank'>Coderhouse</a>, I learned more and more about it, and I just fell in love with code.</p>
                     :
                         <p>Comencé a aprender sobre programación por pura curiosidad a mediados de 2020, como una manera de aprovechar el tiempo libre adicional que tenía debido a la cuarentena. Al principio con <a href='https://www.freecodecamp.org/' target='_blank'>Freecodecamp</a> y luego realizando cursos en <a href='https://www.coderhouse.com/' target='_blank'>Coderhouse</a>, fui aprendiendo más y más, y descubrí que este mundo me apasiona.
                         </p>
