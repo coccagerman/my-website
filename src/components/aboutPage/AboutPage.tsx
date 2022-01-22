@@ -6,6 +6,7 @@ import mypicture from '../../assets/mypicture.jpg'
 import apollo from '../../assets/apollo-logo.png'
 import axios from '../../assets/axios-logo.png'
 import bootstrap from '../../assets/bootstrap-logo.png'
+import cypress from '../../assets/cypress-logo.png'
 import css from '../../assets/css-logo.png'
 import express from '../../assets/express-logo.png'
 import firebase from '../../assets/firebase-logo.png'
@@ -71,7 +72,7 @@ const AboutPage: React.FC = () => {
                     }
 
                     {englishLanguage ?
-                        <p>On this site you can find some the projects I've built, read some of my blog articles and download my CV. If you'd like to contact me, drop me a message at <a href='mailto:coccagerman@gmail.com'>coccagerman@gmail.com</a></p>
+                        <p>On this site you can find some of the projects I've built, read some of my blog articles and download my CV. If you'd like to contact me, drop me a message at <a href='mailto:coccagerman@gmail.com'>coccagerman@gmail.com</a></p>
                     :
                         <p>En este sitio podés encontrar algunos de los proyectos que realicé, leer los artículos de mi blog y descargar mi currículum. Si te interesa contactarme, escribime a <a href='mailto:coccagerman@gmail.com'>coccagerman@gmail.com</a></p>
                     }
@@ -206,6 +207,10 @@ const AboutPage: React.FC = () => {
                         <div className='icon reactTestingLibrary'>
                             <a href='https://testing-library.com/docs/react-testing-library/intro/' target='_blank'><img src={reactTestingLibrary} alt='reactTestingLibrary icon' /></a>
                             <p>React testing library</p>
+                        </div>
+                        <div className='icon'>
+                            <a href='https://www.cypress.io/' target='_blank'><img src={cypress} alt='cypress icon' /></a>
+                            <p>Cypress</p>
                         </div>
                     </div>
                 </div>

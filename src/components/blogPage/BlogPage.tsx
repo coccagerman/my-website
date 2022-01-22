@@ -41,7 +41,7 @@ const BlogPage: React.FC = () => {
                     <div className='intro'>
                         {englishLanguage ?
                             <>
-                                <p>I think one of the best ways to deepen your knowledge of any subject is to explain it to someone else. This is the purpose of my blog. Here I explore and write the the different topics that I go through in my learning path as a developer.</p>
+                                <p>I think one of the best ways to deepen your knowledge of any subject is to explain it to someone else. This is the purpose of my blog. Here I explore and write the different topics that I go through in my learning path as a developer.</p>
 
                                 <p>In this page you can see some of the last articles I wrote. To see all my articles you can visit <a href='https://gercocca.hashnode.dev/' target='_blank'>gercocca.hashnode.dev</a></p>
                             </>

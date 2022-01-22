@@ -24,7 +24,7 @@ const Header: React.FC = () => {
             <Link to='/'><h1 className='mobile-logo'>G</h1></Link>
 
             <ul className='desktop-menu'>
-                <li><NavLink to='/'>{englishLanguage ? 'About' : 'Sobre mi'}</NavLink></li>
+                <li><NavLink data-testid='about-desktop-btn' to='/'>{englishLanguage ? 'About' : 'Sobre mi'}</NavLink></li>
                 <li><NavLink to='/projects'>{englishLanguage ? 'Projects' : 'Proyectos'}</NavLink></li>
                 <li><NavLink to='/blog'>Blog</NavLink></li>
                 <li><NavLink to='/curriculum'>Curriculum</NavLink></li>
@@ -32,12 +32,12 @@ const Header: React.FC = () => {
             </ul>
 
             <div className='language-selector desktop-language-selector'>
-                <button className={englishLanguage ? '' : 'selected'} onClick={() => setEnglishLanguage(false)}>ES</button>
-                <button className={englishLanguage ? 'selected' : ''} onClick={() => setEnglishLanguage(true)}>EN</button>
+                <button data-testid='es-language-btn' className={englishLanguage ? '' : 'selected'} onClick={() => setEnglishLanguage(false)}>ES</button>
+                <button data-testid='en-language-btn' className={englishLanguage ? 'selected' : ''} onClick={() => setEnglishLanguage(true)}>EN</button>
             </div>
 
             <div className='dark-mode-toggle-container'>
-                <input type='checkbox' id='dark-mode-toggle' aria-checked='true' className='toggle-checkbox' checked={darkModeOn} onClick={() => setDarkModeOn(!darkModeOn)} />
+                <input type='checkbox' data-testid='dark-mode-toggle' id='dark-mode-toggle' aria-checked='true' className='toggle-checkbox' checked={darkModeOn} onClick={() => setDarkModeOn(!darkModeOn)} />
                 <label htmlFor='dark-mode-toggle' aria-label='Toggle para modo nocturno' className='toggle'></label>
             </div>
 

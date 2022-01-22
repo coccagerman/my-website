@@ -41,7 +41,7 @@ const CurriculumPage: React.FC = () => {
                             </div>
 
                             <p><span className='bold'><a href='https://www.avature.net/' target='_blank'>Avature</a></span> is a company specialized in HR management software with clients all over the world. Here I'm part of a team that develops projects mainly for US and european companies (DHL, KPMG, McLaren, Philip Morris, among others).</p>
-                            <p>The stack I use is Vanilla Javascript, JQuery, Twig, HTML and CSS.</p>
+                            <p>The stack I use is Vanilla Javascript, JQuery, Twig and CSS.</p>
                         </article>
                     </>
                 :
@@ -60,7 +60,7 @@ const CurriculumPage: React.FC = () => {
                             <h3>Front end developer - Avature</h3>
                             <p>Ago 2021 - Presente</p>
                             <p><span className='bold'><a href='https://www.avature.net/' target='_blank'>Avature</a></span> es una empresa especializada en software de gestión de recursos humanos con clientes alrededor de todo el mundo. Acá formo parte de un equipo de desarrolla proyectos principalmente para empresas de EEUU y Europa (DHL, KPMG, McLaren, Philip Morris, entre otros).</p>
-                            <p>El stack que utilizo es Vanilla Javascript, JQuery, Twig, HTML and CSS.</p>
+                            <p>El stack que utilizo es Vanilla Javascript, JQuery, Twig and CSS.</p>
                         </article>
                     </>
                 }
@@ -131,7 +131,7 @@ const CurriculumPage: React.FC = () => {
                     <>
                         <h2>Previous experience</h2>
                         
-                        <p>Before getting into programming I worked for almost 8 years in the human resources field. I worked in very different companies (from some of the biggest industrial companies in Argentina like <span className='bold'><a href='https://www.ypf.com/' target='_blank'>YPF</a></span> or <span className='bold'><a href='https://www.ypf.com/' target='_blank'>Techint</a></span>, to the <span className='bold'><a href='https://www.buenosaires.gob.ar/' target='_blank'>City Government of Buenos Aires</a></span>, to a world reknowned design and technology company like <span className='bold'><a href='https://www.rga.com/' target='_blank'>R/GA</a></span>, to a rapidly growing startup like <span className='bold'><a href='https://talently.tech/' target='_blank'>Talently</a></span>). I also performed a wide variety of tasks (from recruiting, to payroll, to vendor management, to compensations management, to learning and development).</p>
+                        <p>Before getting into programming I worked for almost 8 years in the human resources field. I worked in very different companies (from some of the biggest industrial companies in Argentina like <span className='bold'><a href='https://www.ypf.com/' target='_blank'>YPF</a></span> or <span className='bold'><a href='https://www.ypf.com/' target='_blank'>Techint</a></span>, to the <span className='bold'><a href='https://www.buenosaires.gob.ar/' target='_blank'>City Government of Buenos Aires</a></span>, to a world reknowned marketing and technology agency like <span className='bold'><a href='https://www.rga.com/' target='_blank'>R/GA</a></span>, to a rapidly growing startup like <span className='bold'><a href='https://talently.tech/' target='_blank'>Talently</a></span>). I also performed a wide variety of tasks (from recruiting, to payroll, to vendor management, to compensations management, to learning and development).</p>
 
                         
                         <p>Some of the more relevant things I did were:</p>
@@ -149,7 +149,7 @@ const CurriculumPage: React.FC = () => {
                     <>
                         <h2>Experiencia previa</h2>
 
-                        <p>Antes de adentrarme en el mundo de la programación, trabajé durante casi 8 años en el campo de recursos humanos. Trabajé en empresas muy diferentes (desde algunas de las empresas industriales más grandes de Argentina como <span className='bold'><a href='https://www.ypf.com/' target='_blank'>YPF</a></span> y <span className='bold'><a href='https://www.ypf.com/' target='_blank'>Techint</a></span>, al <span className='bold'><a href='https://www.buenosaires.gob.ar/' target='_blank'>Gobierno de la Ciudad de Buenos Aires</a></span>, a una mundialmente reconocida empresa de diseño y tecnología como <span className='bold'><a href='https://www.rga.com/' target='_blank'>R/GA</a></span>, a una startup en rápido crecimiento como <span className='bold'><a href='https://talently.tech/' target='_blank'>Talently</a></span>). También realicé tareas muy variadas (desde reclutamiento, a payroll, a gestión de proveedores, a compensaciones, a capacitación).</p>
+                        <p>Antes de adentrarme en el mundo de la programación, trabajé durante casi 8 años en el campo de recursos humanos. Trabajé en empresas muy diferentes (desde algunas de las empresas industriales más grandes de Argentina como <span className='bold'><a href='https://www.ypf.com/' target='_blank'>YPF</a></span> y <span className='bold'><a href='https://www.ypf.com/' target='_blank'>Techint</a></span>, al <span className='bold'><a href='https://www.buenosaires.gob.ar/' target='_blank'>Gobierno de la Ciudad de Buenos Aires</a></span>, a una agencia de marketing y tecnología mundialmente reconocida como <span className='bold'><a href='https://www.rga.com/' target='_blank'>R/GA</a></span>, a una startup en rápido crecimiento como <span className='bold'><a href='https://talently.tech/' target='_blank'>Talently</a></span>). También realicé tareas muy variadas (desde reclutamiento, a payroll, a gestión de proveedores, a compensaciones, a capacitación).</p>
 
                         <p>Algunas de las tareas más relevantes que tuve fueron:</p>
                         <ul>
