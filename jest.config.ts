@@ -1,12 +1,13 @@
 import type { Config } from '@jest/types'
 
 const config: Config.InitialOptions = {
-  verbose: true,
+  verbose: false,
   transform: {
-    '^.+\\.ts?$': 'ts-jest'
+    '^.+\\.ts?$': 'ts-jest',
+    "^.+\\.(js|jsx)$": "babel-jest"
   },
   transformIgnorePatterns: [
-    'node_modules/(?!react-markdown/)'
+    '<rootDir>/node_modules/(?!react-markdown/)'
   ]
 }
 export default config

@@ -9,41 +9,29 @@ import MyWebsiteProject from './myWebsiteProject/MyWebsiteProject'
 
 describe('ProjectsPage', () => {
 
-  test('Render projects page', () => {
-    const component = render(
-      <ContextProvider>
-        <BrowserRouter>
-          <ProjectsPage/>
-        </BrowserRouter>
-      </ContextProvider>
-    )
+  beforeEach(() => render(
+    <ContextProvider>
+      <BrowserRouter>
+        <ProjectsPage/>
+      </BrowserRouter>
+    </ContextProvider>
+  ))
 
+  test('Render projects page', () => {
     expect(screen.getByText("Even though now that I have a full time job as a developer, I'm always working on some side project.")).toBeInTheDocument()
   })
 
   test('Render Helpr card', () => {
-    const component = render(
-      <ContextProvider>
-        <BrowserRouter>
-          <ProjectsPage/>
-        </BrowserRouter>
-      </ContextProvider>
-    )
-
     expect(screen.getByText("Helpr is a portal that connects NGOs with volunteers interested in colaborating with their causes.")).toBeInTheDocument()
   })
 
   test('Render MyWebsite card', () => {
-    const component = render(
-      <ContextProvider>
-        <BrowserRouter>
-          <ProjectsPage/>
-        </BrowserRouter>
-      </ContextProvider>
-    )
-
     expect(screen.getByText("This website contains information about myself, my blog articles and the projects I build.")).toBeInTheDocument()
   })
+
+})
+
+describe('ProjectsPage - Individual project pages', () => {
 
   test('Render Helpr page', () => {
     const component = render(
@@ -53,7 +41,7 @@ describe('ProjectsPage', () => {
         </BrowserRouter>
       </ContextProvider>
     )
-
+  
     expect(screen.getByText("I built this as an educational project and the site isn't live now, but I'd like to ship it to production some time in the future.")).toBeInTheDocument()
   })
 
@@ -68,5 +56,4 @@ describe('ProjectsPage', () => {
 
     expect(screen.getByText("Tested with Jest and React testing library.")).toBeInTheDocument()
   })
-
 })

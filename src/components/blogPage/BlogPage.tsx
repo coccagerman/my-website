@@ -25,7 +25,6 @@ const BlogPage: React.FC = () => {
     `
 
     const { loading, error, data } = useQuery(GET_USER_ARTICLES, { variables: { page: 0 } })
-
     interface BlogArticle {
         __typename: string,
         title: string,

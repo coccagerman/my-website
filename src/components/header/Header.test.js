@@ -8,24 +8,17 @@ import Header from './Header'
 
 describe('Header', () => {
 
-  test('Render header', () => {
-    render(
+  beforeEach(() => render(
+    <ContextProvider>
       <BrowserRouter>
         <Header/>
       </BrowserRouter>
-    )
-    
-    expect(screen.getByText('Germán Cocca')).toBeInTheDocument()
-  })
+    </ContextProvider>
+  ))
+
+  test('Render header', () => expect(screen.getByText('Germán Cocca')).toBeInTheDocument())
 
   test('Changes language on click', () => {
-    render(
-      <ContextProvider>
-        <BrowserRouter>
-          <Header/>
-        </BrowserRouter>
-      </ContextProvider>
-    )
     
     userEvent.click(screen.getByTestId('es-language-btn'))
     expect(screen.getByTestId('about-desktop-btn')).toHaveTextContent('Sobre mi')
@@ -35,13 +28,6 @@ describe('Header', () => {
   })
 
   test('Changes darkMode on click', () => {
-    render(
-      <ContextProvider>
-        <BrowserRouter>
-          <Header/>
-        </BrowserRouter>
-      </ContextProvider>
-    )
     
     userEvent.click(screen.getByTestId('dark-mode-toggle'))
     expect(screen.getByRole('banner').className === 'header header-light').toBe(true)
