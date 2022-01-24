@@ -34,7 +34,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress": "npx cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -57,6 +58,7 @@
   "devDependencies": {
     "@iconify/react": "^3.1.1",
     "@testing-library/dom": "^8.11.2",
-    "@testing-library/user-event": "^13.5.0"
+    "@testing-library/user-event": "^13.5.0",
+    "cypress": "^9.3.1"
   }
 }

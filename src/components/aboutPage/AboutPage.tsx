@@ -21,6 +21,7 @@ import knex from '../../assets/knex-logo.png'
 import mongo from '../../assets/mongo-logo.png'
 import mongoose from '../../assets/mongoose-logo.png'
 import node from '../../assets/node-logo.png'
+import npm from '../../assets/npm-logo.png'
 import postgre from '../../assets/postgre-logo.jpg'
 import postman from '../../assets/postman-logo.png'
 import react from '../../assets/react-logo.png'
@@ -230,6 +231,10 @@ const AboutPage: React.FC = () => {
                         <div className='icon'>
                             <a href='https://about.gitlab.com/' target='_blank'><img src={gitlab} alt='gitlab icon' /></a>
                             <p>Gitlab</p>
+                        </div>
+                        <div className='icon'>
+                            <a href='https://www.npmjs.com/' target='_blank'><img src={npm} alt='npm icon' /></a>
+                            <p>NPM</p>
                         </div>
                         <div className='icon'>
                             <a href='https://www.postman.com/' target='_blank'><img src={postman} alt='postman icon' /></a>

@@ -24,11 +24,11 @@ const Header: React.FC = () => {
             <Link to='/'><h1 className='mobile-logo'>G</h1></Link>
 
             <ul className='desktop-menu'>
-                <li><NavLink data-testid='about-desktop-btn' to='/'>{englishLanguage ? 'About' : 'Sobre mi'}</NavLink></li>
-                <li><NavLink to='/projects'>{englishLanguage ? 'Projects' : 'Proyectos'}</NavLink></li>
-                <li><NavLink to='/blog'>Blog</NavLink></li>
-                <li><NavLink to='/curriculum'>Curriculum</NavLink></li>
-                <li><NavLink to='/contact'>{englishLanguage ? 'Contact' : 'Contacto'}</NavLink></li>
+                <li><NavLink className='about-desktop-btn' data-testid='about-desktop-btn' to='/'>{englishLanguage ? 'About' : 'Sobre mi'}</NavLink></li>
+                <li><NavLink className='projects-desktop-btn' to='/projects'>{englishLanguage ? 'Projects' : 'Proyectos'}</NavLink></li>
+                <li><NavLink className='blog-desktop-btn' to='/blog'>Blog</NavLink></li>
+                <li><NavLink className='curriculum-desktop-btn' to='/curriculum'>Curriculum</NavLink></li>
+                <li><NavLink className='contact-desktop-btn' to='/contact'>{englishLanguage ? 'Contact' : 'Contacto'}</NavLink></li>
             </ul>
 
             <div className='language-selector desktop-language-selector'>
@@ -49,7 +49,7 @@ const Header: React.FC = () => {
                 </div>
             </a>
 
-            <nav className={showMobileMenu ? 'mobile-menu-active' : 'mobile-menu'}>
+            <nav id='mobile-menu' className={showMobileMenu ? 'mobile-menu-active' : 'mobile-menu'}>
                 <ul>
                     <li><NavLink to='/' onClick={() => hideMobileMenu()}>{englishLanguage ? 'About' : 'Sobre mi'}</NavLink></li>
                     <li><NavLink to='/projects' onClick={() => hideMobileMenu()}>{englishLanguage ? 'Projects' : 'Proyectos'}</NavLink></li>
