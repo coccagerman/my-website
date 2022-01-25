@@ -3,13 +3,16 @@ import Context from '../../context/Context'
 import { Link } from 'react-router-dom'
 import { Icon } from '@iconify/react'
 import mypicture from '../../assets/mypicture.jpg'
+import androidStudio from '../../assets/androidStudio-logo.png'
 import apollo from '../../assets/apollo-logo.png'
 import axios from '../../assets/axios-logo.png'
 import bootstrap from '../../assets/bootstrap-logo.png'
 import cypress from '../../assets/cypress-logo.png'
 import css from '../../assets/css-logo.png'
 import express from '../../assets/express-logo.png'
+import expo from '../../assets/expo-logo.png'
 import firebase from '../../assets/firebase-logo.png'
+import figma from '../../assets/figma-logo.png'
 import github from '../../assets/github-logo.png'
 import gitlab from '../../assets/gitlab-logo.jpg'
 import git from '../../assets/git-logo.png'
@@ -239,6 +242,18 @@ const AboutPage: React.FC = () => {
                         <div className='icon'>
                             <a href='https://www.postman.com/' target='_blank'><img src={postman} alt='postman icon' /></a>
                             <p>Postman</p>
+                        </div>
+                        <div className='icon'>
+                            <a href='https://docs.expo.dev/' target='_blank'><img src={expo} alt='expo icon' /></a>
+                            <p>Expo CLI</p>
+                        </div>
+                        <div className='icon androidStudio'>
+                            <a href='https://developer.android.com/' target='_blank'><img src={androidStudio} alt='androidStudio icon' /></a>
+                            <p>Android studio</p>
+                        </div>
+                        <div className='icon'>
+                            <a href='https://www.figma.com/' target='_blank'><img src={figma} alt='figma icon' /></a>
+                            <p>Figma</p>
                         </div>
                     </div>
                 </div>

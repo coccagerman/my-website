@@ -14,9 +14,9 @@ const MyWebsiteProject: React.FC = () => {
 
             <div className='intro'>
                 {englishLanguage ?
-                    <p>I always wanted to build my own website to showcase my projects and experience, so I defenitely enjoyed building this. Moreover, I used this project to learn how to use react with <span className='bold'>typescript</span>, test react projects with <span className='bold'>jest</span> and <span className='bold'>react testing library</span> and consume <span className='bold'>GraphQL</span> APIs with <span className='bold'>Apollo client</span>.</p>
+                    <p>I always wanted to build my own website to showcase my projects and experience, so I defenitely enjoyed building this. Moreover, I used this project to learn how to use react with <span className='bold'>typescript</span>, test react projects with <span className='bold'>jest</span>, <span className='bold'>react testing library</span> and <span className='bold'>Cypress</span>, and consume <span className='bold'>GraphQL</span> APIs with <span className='bold'>Apollo client</span>.</p>
                 :
-                    <p>Siempre quise crear mi propio sitio para mostrar mis proyectos y experiencia, así que me gustó bastante crear esto. Utilicé este proyecto sobre todo para aprender cómo usar react con <span className='bold'>typescript</span>, testear proyectos de react con <span className='bold'>jest</span> y <span className='bold'>react testing library</span> y consumir APIs <span className='bold'>GraphQL</span> con <span className='bold'>Apollo client</span>.</p>
+                    <p>Siempre quise crear mi propio sitio para mostrar mis proyectos y experiencia, así que me gustó bastante crear esto. Utilicé este proyecto sobre todo para aprender cómo usar react con <span className='bold'>typescript</span>, testear proyectos de react con <span className='bold'>jest</span>, <span className='bold'>react testing library</span> y <span className='bold'>Cypress</span>,y consumir APIs <span className='bold'>GraphQL</span> con <span className='bold'>Apollo client</span>.</p>
                 }
             </div>
 
@@ -32,7 +32,8 @@ const MyWebsiteProject: React.FC = () => {
                             <li>Navigation with React router.</li>
                             <li>Fully responsive design and styling with SASS.</li>
                             <li>Blog articles served through <span className='bold'>Hashnode</span> GraphQL API, consumed with Apollo client.</li>
-                            <li>Tested with Jest and React testing library.</li>
+                            <li>Unit testing with Jest and React testing library.</li>
+                            <li>End to end tests with Cypress.</li>
                         </ul>
                     </>
                 :
@@ -44,7 +45,8 @@ const MyWebsiteProject: React.FC = () => {
                             <li>Navegación con React router.</li>
                             <li>Diseño responsive y estilos con SASS.</li>
                             <li>Artículos de blog consumidos desde la API GraphQL <span className='bold'>Hashnode</span> con Apollo client.</li>
-                            <li>Testeado con Jest y React testing library.</li>
+                            <li>Tests unitarios con Jest y React testing library.</li>
+                            <li>Tests end to end con Cypress.</li>
                         </ul>
                     </>
                 }
