@@ -123,6 +123,10 @@ const AboutPage: React.FC = () => {
                             <p>React native</p>
                         </div>
                         <div className='icon'>
+                            <a href='https://docs.expo.dev/' target='_blank'><img src={expo} alt='expo icon' /></a>
+                            <p>Expo</p>
+                        </div>
+                        <div className='icon'>
                             <a href='https://redux.js.org/' target='_blank'><img src={redux} alt='redux icon' /></a>
                             <p>Redux</p>
                         </div>
@@ -149,10 +153,6 @@ const AboutPage: React.FC = () => {
                         <div className='icon'>
                             <a href='https://sass-lang.com/' target='_blank'><img src={sass} alt='sass icon' /></a>
                             <p>Sass</p>
-                        </div>
-                        <div className='icon'>
-                            <a href='https://getbootstrap.com/' target='_blank'><img src={bootstrap} alt='bootstrap icon' /></a>
-                            <p>Bootstrap</p>
                         </div>
                     </div>
                 </div>
@@ -242,10 +242,6 @@ const AboutPage: React.FC = () => {
                         <div className='icon'>
                             <a href='https://www.postman.com/' target='_blank'><img src={postman} alt='postman icon' /></a>
                             <p>Postman</p>
-                        </div>
-                        <div className='icon'>
-                            <a href='https://docs.expo.dev/' target='_blank'><img src={expo} alt='expo icon' /></a>
-                            <p>Expo CLI</p>
                         </div>
                         <div className='icon androidStudio'>
                             <a href='https://developer.android.com/' target='_blank'><img src={androidStudio} alt='androidStudio icon' /></a>
