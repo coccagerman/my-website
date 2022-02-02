@@ -42,6 +42,11 @@ const CurriculumPage: React.FC = () => {
 
                             <p><span className='bold'><a href='https://www.avature.net/' target='_blank'>Avature</a></span> is a company specialized in HR management software with clients all over the world. Here I'm part of a team that develops projects mainly for US and european companies (DHL, KPMG, McLaren, Philip Morris, among others).</p>
                             <p>The stack I use is Vanilla Javascript, JQuery, Twig and CSS.</p>
+                            <p>Some of the projects I've worked on:</p>
+                            <ul>
+                                <li><a href="https://careers.viasat.com/" target='_blank'>careers.viasat.com</a></li>
+                                <li><a href="https://www.pmi.com/careers/" target='_blank'>pmi.com/careers</a></li>
+                            </ul>
                         </article>
                     </>
                 :
@@ -61,6 +66,11 @@ const CurriculumPage: React.FC = () => {
                             <p>Ago 2021 - Presente</p>
                             <p><span className='bold'><a href='https://www.avature.net/' target='_blank'>Avature</a></span> es una empresa especializada en software de gestión de recursos humanos con clientes alrededor de todo el mundo. Acá formo parte de un equipo de desarrolla proyectos principalmente para empresas de EEUU y Europa (DHL, KPMG, McLaren, Philip Morris, entre otros).</p>
                             <p>El stack que utilizo es Vanilla Javascript, JQuery, Twig and CSS.</p>
+                            <p>Algunos de los proyectos en los que trabajé:</p>
+                            <ul>
+                                <li><a href="https://careers.viasat.com/" target='_blank'>careers.viasat.com</a></li>
+                                <li><a href="https://www.pmi.com/careers/" target='_blank'>pmi.com/careers</a></li>
+                            </ul>
                         </article>
                     </>
                 }
