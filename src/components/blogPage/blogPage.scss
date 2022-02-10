@@ -69,9 +69,7 @@
                         height: 5.5rem;
                         border-radius: .5rem .5rem 0 0;
                         transition: .3s;
-
-                        
-                        
+                    
                         h1 {
                             font-size: 1.75rem;
                         }
@@ -91,9 +89,12 @@
                         color: black;
                         background-color: lightgray;
                         border-radius: 0 0 .5rem .5rem;
+                        font-weight: 400;
+                        font-size: 1.2rem;
 
                         h2 {
-                            font-size: 1.5rem;
+                            font-size: 1.75rem;
+                            font-weight: 600;
                         }
 
                         img {
