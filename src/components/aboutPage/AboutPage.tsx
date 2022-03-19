@@ -6,7 +6,7 @@ import mypicture from '../../assets/mypicture.jpg'
 import androidStudio from '../../assets/androidStudio-logo.png'
 import apollo from '../../assets/apollo-logo.png'
 import axios from '../../assets/axios-logo.png'
-import bootstrap from '../../assets/bootstrap-logo.png'
+import bash from '../../assets/bash-logo.jpg'
 import cypress from '../../assets/cypress-logo.png'
 import css from '../../assets/css-logo.png'
 import express from '../../assets/express-logo.png'
@@ -104,6 +104,10 @@ const AboutPage: React.FC = () => {
                         <div className='icon'>
                             <a href='https://www.typescriptlang.org/' target='_blank'><img src={typescript} alt='typescript icon' /></a>
                             <p>Typescript</p>
+                        </div>
+                        <div className='icon'>
+                            <a href='https://en.wikipedia.org/wiki/Bash_(Unix_shell)' target='_blank'><img src={bash} alt='bash icon' /></a>
+                            <p>Bash</p>
                         </div>
                     </div>
                 </div>

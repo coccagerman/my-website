@@ -54,6 +54,6 @@ describe('ProjectsPage - Individual project pages', () => {
       </ContextProvider>
     )
 
-    expect(screen.getByText("Tested with Jest and React testing library.")).toBeInTheDocument()
+    expect(screen.getByText("Unit testing with Jest and React testing library.")).toBeInTheDocument()
   })
 })
