@@ -32,7 +32,7 @@ import postgre from '../../assets/postgre-logo.jpg'
 import postman from '../../assets/postman-logo.png'
 import react from '../../assets/react-logo.png'
 import reactNative from '../../assets/reactNative-logo.png'
-import reactTestingLibrary from '../../assets/reactTestingLibrary-logo.png'
+import testingLibrary from '../../assets/testingLibrary-logo.png'
 import redis from '../../assets/redis-logo.png'
 import redux from '../../assets/redux-logo.jpeg'
 import sass from '../../assets/sass-logo.jpg'
@@ -221,9 +221,9 @@ const AboutPage: React.FC = () => {
                             <a href='https://jestjs.io/' target='_blank' rel='noreferrer'><img src={jest} alt='jest icon' /></a>
                             <p>Jest</p>
                         </div>
-                        <div className='icon reactTestingLibrary'>
-                            <a href='https://testing-library.com/docs/react-testing-library/intro/' target='_blank' rel='noreferrer'><img src={reactTestingLibrary} alt='reactTestingLibrary icon' /></a>
-                            <p>React testing library</p>
+                        <div className='icon testingLibrary'>
+                            <a href='https://testing-library.com/' target='_blank' rel='noreferrer'><img src={testingLibrary} alt='TestingLibrary icon' /></a>
+                            <p>Testing library</p>
                         </div>
                         <div className='icon'>
                             <a href='https://www.cypress.io/' target='_blank' rel='noreferrer'><img src={cypress} alt='cypress icon' /></a>
