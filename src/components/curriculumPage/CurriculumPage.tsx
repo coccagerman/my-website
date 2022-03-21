@@ -1,10 +1,12 @@
 import { useContext } from 'react'
 import Context from '../../context/Context'
+
 import myCVPicture from '../../assets/myCVPicture.jpg'
 import avatureLogo from '../../assets/avature-logo.jpeg'
 import freeCodeCampLogo from '../../assets/freeCodeCamp-logo.jpeg'
 import UAILogo from '../../assets/UAI-logo.jpeg'
 import coderhouseLogo from '../../assets/coderhouse-logo.jpg'
+
 import englishCV from '../../assets/GermanCoccaResume.pdf'
 import spanishCV from '../../assets/GermanCoccaCV.pdf'
 

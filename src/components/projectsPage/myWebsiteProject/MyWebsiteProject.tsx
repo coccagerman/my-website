@@ -1,5 +1,6 @@
 import { useContext } from 'react'
 import Context from '../../../context/Context'
+
 import myWebsitefrontPage from '../../../assets/myWebsite/frontPage.png'
 import blogArticlesGif from '../../../assets/myWebsite/blogArticles.gif'
 

@@ -1,7 +1,10 @@
 import { useContext } from 'react'
 import Context from '../../context/Context'
+
 import { Link } from 'react-router-dom'
+
 import Card from 'react-bootstrap/Card'
+
 import codingIconBlack from '../../assets/codingIconBlack.png'
 import codingIconWhite from '../../assets/codingIconWhite.png'
 

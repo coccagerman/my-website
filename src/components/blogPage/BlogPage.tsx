@@ -1,6 +1,8 @@
 import { useContext } from 'react'
 import Context from '../../context/Context'
+
 import { useQuery, gql } from '@apollo/client'
+
 import Article from './article/Article'
 import Accordion from 'react-bootstrap/Accordion'
 import ErrorMsg from './errorMsg/ErrorMsg'
@@ -31,7 +33,7 @@ const BlogPage: React.FC = () => {
         dateAdded: string,
         coverImage: string,
         contentMarkdown: string
-    }    
+    }
 
     return (
         <section className={darkModeOn ? 'blogPage blogPage-dark' : 'blogPage blogPage-light'}>

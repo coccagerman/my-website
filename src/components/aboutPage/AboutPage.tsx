@@ -1,7 +1,10 @@
 import { useContext } from 'react'
 import Context from '../../context/Context'
+
 import { Link } from 'react-router-dom'
+
 import { Icon } from '@iconify/react'
+
 import mypicture from '../../assets/mypicture.jpg'
 import androidStudio from '../../assets/androidStudio-logo.png'
 import apollo from '../../assets/apollo-logo.png'

@@ -1,5 +1,6 @@
 import { useContext, useState } from 'react'
 import Context from '../../context/Context'
+
 import { Link, NavLink } from 'react-router-dom'
 
 const Header: React.FC = () => {

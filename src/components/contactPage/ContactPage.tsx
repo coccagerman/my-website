@@ -1,6 +1,8 @@
 import { useContext } from 'react'
 import Context from '../../context/Context'
+
 import { Link } from 'react-router-dom'
+
 import mailIconWhite from '../../assets/mailIcon-white.png'
 import mailIconBlack from '../../assets/mailIcon-black.png'
 
