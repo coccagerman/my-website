@@ -51,28 +51,40 @@ const AboutPage: React.FC = () => {
                     }
 
                     {englishLanguage ?
-                        <p>I love coding and solving puzzles. I'm curious by nature, I like to learn and understand how things work, and from that knowledge build tools that are useful for other people.</p>
+                        <p>I love coding and solving puzzles. I'm curious by nature. I like to learn and understand how things work, and from that knowledge build tools that are useful for other people.</p>
                     :
-                        <p>Me encanta escribir código y resolver problemas. Soy curioso por naturaleza, me gusta aprender y entender cómo funcionan las cosas, y a partir de esos conocimientos construir herramientas que sean útiles para otras personas.</p>
+                        <p>Me encanta escribir código y resolver problemas. Soy curioso por naturaleza. Me gusta aprender y entender cómo funcionan las cosas, y a partir de esos conocimientos construir herramientas que sean útiles para otras personas.</p>
                     }
 
                     {englishLanguage ?
-                        <p>I started learning about programming just out of curiosity at the middle of 2020, as a way to get the best out of the additional free time I had because of the lockout. At the beginning through <a href='https://www.freecodecamp.org/' target='_blank'>Freecodecamp</a> and then taking different courses at <a href='https://www.coderhouse.com/' target='_blank'>Coderhouse</a>, I learned more and more about it, and I just fell in love with code.</p>
+                        <>
+                            <p>I started learning about programming just out of curiosity at the middle of 2020, as a way to get the best out of the additional free time I had because of the lockout.</p>
+                            <p>At the beginning through <a href='https://www.freecodecamp.org/' target='_blank' rel='noreferrer'>Freecodecamp</a> and then taking different courses at <a href='https://www.coderhouse.com/' target='_blank' rel='noreferrer'>Coderhouse</a>, I learned more and more about it, and I just fell in love with code.</p>
+                        </>
                     :
-                        <p>Comencé a aprender sobre programación por pura curiosidad a mediados de 2020, como una manera de aprovechar el tiempo libre adicional que tenía debido a la cuarentena. Al principio con <a href='https://www.freecodecamp.org/' target='_blank'>Freecodecamp</a> y luego realizando cursos en <a href='https://www.coderhouse.com/' target='_blank'>Coderhouse</a>, fui aprendiendo más y más, y descubrí que este mundo me apasiona.
-                        </p>
+                        <>
+                            <p>Comencé a aprender sobre programación por pura curiosidad a mediados de 2020, como una manera de aprovechar el tiempo libre adicional que tenía debido a la cuarentena.</p>
+                            <p>Al principio con <a href='https://www.freecodecamp.org/' target='_blank' rel='noreferrer'>Freecodecamp</a> y luego realizando cursos en <a href='https://www.coderhouse.com/' target='_blank' rel='noreferrer'>Coderhouse</a>, fui aprendiendo más y más, y descubrí que este mundo me apasiona.
+                            </p>
+                        </>
                     }
 
                     {englishLanguage ? 
-                        <p>At the middle of 2021, after a year of studying and building projects on my own, I decided to make a change in my career, and join <a href='https://www.avature.net/' target='_blank'>Avature</a> to start developing software professionally.</p>
+                        <p>At the middle of 2021, after a year of studying and building projects on my own, I decided to make a change in my career, and join <a href='https://www.avature.net/' target='_blank' rel='noreferrer'>Avature</a> to start developing software professionally.</p>
                     : 
-                        <p>A mediados de 2021, luego de un año dedicado a aprender y construir proyectos por mi cuenta, decidí hacer un cambio en mi carrera y unirme a <a href='https://www.avature.net/' target='_blank'>Avature</a>, para comenzar a desarrollar software profesionalmente.</p>
+                        <p>A mediados de 2021, luego de un año dedicado a aprender y construir proyectos por mi cuenta, decidí hacer un cambio en mi carrera y unirme a <a href='https://www.avature.net/' target='_blank' rel='noreferrer'>Avature</a>, para comenzar a desarrollar software profesionalmente.</p>
                     }
 
                     {englishLanguage ?
-                        <p>At the moment I'm studying computer science at <a href='https://uai.edu.ar/' target='_blank'>UAI</a>. My goal for the future is to keep learning as much as I can and become the best developer I can be.</p>
+                        <>
+                            <p>I like to spend my time learning as much as I can and trying to become the best developer I can be.</p>
+                            <p>At the moment I'm also studying computer science at <a href='https://uai.edu.ar/' target='_blank' rel='noreferrer'>UAI</a> and frequently writting articles about Javascript, React and general programming on <a href='https://gercocca.hashnode.dev/' target='_blank' rel='noreferrer'>my blog</a> and <a href='https://www.freecodecamp.org/news/author/gercocca/' target='_blank' rel='noreferrer'>FreeCodeCamp's platform</a>.</p>
+                        </>
                     :
-                        <p>Actualmente estoy estudiando ingeniería informática en <a href='https://uai.edu.ar/' target='_blank'>UAI</a>. Mi objetivo para el futuro es sencillamente seguir aprendiendo indefinidamente y transformarme en el mejor desarrollador que pueda ser.</p>
+                        <>
+                            <p>Me gusta usar mi tiempo para aprender cosas nuevas constantemente y tratar de convertirme en el mejor desarrollador que pueda ser.</p>
+                            <p>Actualmente estoy estudiando ingeniería informática en <a href='https://uai.edu.ar/' target='_blank' rel='noreferrer'>UAI</a>. Además también escribo artículos sobre Javascript, React y programación en general en <a href='https://gercocca.hashnode.dev/' target='_blank' rel='noreferrer'>mi blog</a> y en <a href='https://www.freecodecamp.org/news/author/gercocca/' target='_blank' rel='noreferrer'>la plataforma de FreeCodeCamp</a>.</p>
+                        </>
                     }
 
                     {englishLanguage ?
@@ -81,7 +93,7 @@ const AboutPage: React.FC = () => {
                         <p>En este sitio podés encontrar algunos de los proyectos que realicé, leer los artículos de mi blog y descargar mi currículum. Si te interesa contactarme, escribime a <a href='mailto:coccagerman@gmail.com'>coccagerman@gmail.com</a></p>
                     }
                 </div>
-                <img src={mypicture} alt='my picture' />
+                <img src={mypicture} alt='myself' />
             </div>
 
             <div className='content-section'>
@@ -98,15 +110,15 @@ const AboutPage: React.FC = () => {
 
                     <div className='icons-container'>
                         <div className='icon'>
-                            <a href='https://www.javascript.com/' target='_blank'><img src={javascript} alt='javascript icon' /></a>
+                            <a href='https://www.javascript.com/' target='_blank' rel='noreferrer'><img src={javascript} alt='javascript icon' /></a>
                             <p>Javascript</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://www.typescriptlang.org/' target='_blank'><img src={typescript} alt='typescript icon' /></a>
+                            <a href='https://www.typescriptlang.org/' target='_blank' rel='noreferrer'><img src={typescript} alt='typescript icon' /></a>
                             <p>Typescript</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://en.wikipedia.org/wiki/Bash_(Unix_shell)' target='_blank'><img src={bash} alt='bash icon' /></a>
+                            <a href='https://en.wikipedia.org/wiki/Bash_(Unix_shell)' target='_blank' rel='noreferrer'><img src={bash} alt='bash icon' /></a>
                             <p>Bash</p>
                         </div>
                     </div>
@@ -119,43 +131,43 @@ const AboutPage: React.FC = () => {
 
                     <div className='icons-container'>
                         <div className='icon'>
-                            <a href='https://reactjs.org/' target='_blank'><img src={react} alt='react icon' /></a>
+                            <a href='https://reactjs.org/' target='_blank' rel='noreferrer'><img src={react} alt='react icon' /></a>
                             <p>React</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://reactnative.dev/' target='_blank'><img src={reactNative} alt='reactNative icon' /></a>
+                            <a href='https://reactnative.dev/' target='_blank' rel='noreferrer'><img src={reactNative} alt='reactNative icon' /></a>
                             <p>React native</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://docs.expo.dev/' target='_blank'><img src={expo} alt='expo icon' /></a>
+                            <a href='https://docs.expo.dev/' target='_blank' rel='noreferrer'><img src={expo} alt='expo icon' /></a>
                             <p>Expo</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://redux.js.org/' target='_blank'><img src={redux} alt='redux icon' /></a>
+                            <a href='https://redux.js.org/' target='_blank' rel='noreferrer'><img src={redux} alt='redux icon' /></a>
                             <p>Redux</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://graphql.org/' target='_blank'><img src={graphql} alt='graphql icon' /></a>
+                            <a href='https://graphql.org/' target='_blank' rel='noreferrer'><img src={graphql} alt='graphql icon' /></a>
                             <p>GraphQL</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://www.apollographql.com/' target='_blank'><img src={apollo} alt='apollo icon' /></a>
+                            <a href='https://www.apollographql.com/' target='_blank' rel='noreferrer'><img src={apollo} alt='apollo icon' /></a>
                             <p>Apollo client</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://axios-http.com/docs/intro' target='_blank'><img src={axios} alt='axios icon' /></a>
+                            <a href='https://axios-http.com/docs/intro' target='_blank' rel='noreferrer'><img src={axios} alt='axios icon' /></a>
                             <p>Axios</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://developer.mozilla.org/en-US/docs/Web/HTML' target='_blank'><img src={html} alt='html icon' /></a>
+                            <a href='https://developer.mozilla.org/en-US/docs/Web/HTML' target='_blank' rel='noreferrer'><img src={html} alt='html icon' /></a>
                             <p>HTML</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' target='_blank'><img src={css} alt='css icon' /></a>
+                            <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' target='_blank' rel='noreferrer'><img src={css} alt='css icon' /></a>
                             <p>CSS</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://sass-lang.com/' target='_blank'><img src={sass} alt='sass icon' /></a>
+                            <a href='https://sass-lang.com/' target='_blank' rel='noreferrer'><img src={sass} alt='sass icon' /></a>
                             <p>Sass</p>
                         </div>
                     </div>
@@ -166,39 +178,39 @@ const AboutPage: React.FC = () => {
 
                     <div className='icons-container'>
                         <div className='icon'>
-                            <a href='https://nodejs.org/' target='_blank'><img src={node} alt='node icon' /></a>
+                            <a href='https://nodejs.org/' target='_blank' rel='noreferrer'><img src={node} alt='node icon' /></a>
                             <p>Node</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://expressjs.com/' target='_blank'><img src={express} alt='express icon' /></a>
+                            <a href='https://expressjs.com/' target='_blank' rel='noreferrer'><img src={express} alt='express icon' /></a>
                             <p>Express</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://www.mongodb.com/' target='_blank'><img src={mongo} alt='mongo icon' /></a>
+                            <a href='https://www.mongodb.com/' target='_blank' rel='noreferrer'><img src={mongo} alt='mongo icon' /></a>
                             <p>Mongo db</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://mongoosejs.com/' target='_blank'><img src={mongoose} alt='mongoose icon' /></a>
+                            <a href='https://mongoosejs.com/' target='_blank' rel='noreferrer'><img src={mongoose} alt='mongoose icon' /></a>
                             <p>Mongoose</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://www.postgresql.org/' target='_blank'><img src={postgre} alt='postgre icon' /></a>
+                            <a href='https://www.postgresql.org/' target='_blank' rel='noreferrer'><img src={postgre} alt='postgre icon' /></a>
                             <p>PostgreSQL</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://knexjs.org/' target='_blank'><img src={knex} alt='knex icon' /></a>
+                            <a href='https://knexjs.org/' target='_blank' rel='noreferrer'><img src={knex} alt='knex icon' /></a>
                             <p>Knex</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://redis.io/' target='_blank'><img src={redis} alt='redis icon' /></a>
+                            <a href='https://redis.io/' target='_blank' rel='noreferrer'><img src={redis} alt='redis icon' /></a>
                             <p>Redis</p>
                         </div>
                         <div className='icon'>
-                            <a href='http://socket.io/' target='_blank'><img src={websocket} alt='websocket icon' /></a>
+                            <a href='http://socket.io/' target='_blank' rel='noreferrer'><img src={websocket} alt='websocket icon' /></a>
                             <p>WebSockets</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://firebase.google.com/' target='_blank'><img src={firebase} alt='firebase icon' /></a>
+                            <a href='https://firebase.google.com/' target='_blank' rel='noreferrer'><img src={firebase} alt='firebase icon' /></a>
                             <p>Firebase</p>
                         </div>
                     </div>
@@ -209,15 +221,15 @@ const AboutPage: React.FC = () => {
 
                     <div className='icons-container'>
                         <div className='icon'>
-                            <a href='https://jestjs.io/' target='_blank'><img src={jest} alt='jest icon' /></a>
+                            <a href='https://jestjs.io/' target='_blank' rel='noreferrer'><img src={jest} alt='jest icon' /></a>
                             <p>Jest</p>
                         </div>
                         <div className='icon reactTestingLibrary'>
-                            <a href='https://testing-library.com/docs/react-testing-library/intro/' target='_blank'><img src={reactTestingLibrary} alt='reactTestingLibrary icon' /></a>
+                            <a href='https://testing-library.com/docs/react-testing-library/intro/' target='_blank' rel='noreferrer'><img src={reactTestingLibrary} alt='reactTestingLibrary icon' /></a>
                             <p>React testing library</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://www.cypress.io/' target='_blank'><img src={cypress} alt='cypress icon' /></a>
+                            <a href='https://www.cypress.io/' target='_blank' rel='noreferrer'><img src={cypress} alt='cypress icon' /></a>
                             <p>Cypress</p>
                         </div>
                     </div>
@@ -228,31 +240,31 @@ const AboutPage: React.FC = () => {
 
                     <div className='icons-container'>
                         <div className='icon'>
-                            <a href='https://git-scm.com/' target='_blank'><img src={git} alt='git icon' /></a>
+                            <a href='https://git-scm.com/' target='_blank' rel='noreferrer'><img src={git} alt='git icon' /></a>
                             <p>Git</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://github.com/' target='_blank'><img src={github} alt='github icon' /></a>
+                            <a href='https://github.com/' target='_blank' rel='noreferrer'><img src={github} alt='github icon' /></a>
                             <p>Github</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://about.gitlab.com/' target='_blank'><img src={gitlab} alt='gitlab icon' /></a>
+                            <a href='https://about.gitlab.com/' target='_blank' rel='noreferrer'><img src={gitlab} alt='gitlab icon' /></a>
                             <p>Gitlab</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://www.npmjs.com/' target='_blank'><img src={npm} alt='npm icon' /></a>
+                            <a href='https://www.npmjs.com/' target='_blank' rel='noreferrer'><img src={npm} alt='npm icon' /></a>
                             <p>NPM</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://www.postman.com/' target='_blank'><img src={postman} alt='postman icon' /></a>
+                            <a href='https://www.postman.com/' target='_blank' rel='noreferrer'><img src={postman} alt='postman icon' /></a>
                             <p>Postman</p>
                         </div>
                         <div className='icon androidStudio'>
-                            <a href='https://developer.android.com/' target='_blank'><img src={androidStudio} alt='androidStudio icon' /></a>
+                            <a href='https://developer.android.com/' target='_blank' rel='noreferrer'><img src={androidStudio} alt='androidStudio icon' /></a>
                             <p>Android studio</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://www.figma.com/' target='_blank'><img src={figma} alt='figma icon' /></a>
+                            <a href='https://www.figma.com/' target='_blank' rel='noreferrer'><img src={figma} alt='figma icon' /></a>
                             <p>Figma</p>
                         </div>
                     </div>
