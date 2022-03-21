@@ -51,7 +51,7 @@ const AboutPage: React.FC = () => {
                     }
 
                     {englishLanguage ?
-                        <p>I love coding and solving puzzles. I'm curious by nature, I like to learn and understand how thinks work, and from that knowledge build tools that are useful for other people.</p>
+                        <p>I love coding and solving puzzles. I'm curious by nature, I like to learn and understand how things work, and from that knowledge build tools that are useful for other people.</p>
                     :
                         <p>Me encanta escribir código y resolver problemas. Soy curioso por naturaleza, me gusta aprender y entender cómo funcionan las cosas, y a partir de esos conocimientos construir herramientas que sean útiles para otras personas.</p>
                     }
