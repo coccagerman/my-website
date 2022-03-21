@@ -76,15 +76,9 @@ const AboutPage: React.FC = () => {
                     }
 
                     {englishLanguage ?
-                        <>
-                            <p>I like to spend my time learning as much as I can and trying to become the best developer I can be.</p>
-                            <p>At the moment I'm also studying computer science at <a href='https://uai.edu.ar/' target='_blank' rel='noreferrer'>UAI</a> and frequently writting articles about Javascript, React and general programming on <a href='https://gercocca.hashnode.dev/' target='_blank' rel='noreferrer'>my blog</a> and <a href='https://www.freecodecamp.org/news/author/gercocca/' target='_blank' rel='noreferrer'>FreeCodeCamp's platform</a>.</p>
-                        </>
+                        <p>At the moment I'm also studying computer science at <a href='https://uai.edu.ar/' target='_blank' rel='noreferrer'>UAI</a> and frequently writting articles about Javascript, React and general programming on <a href='https://gercocca.hashnode.dev/' target='_blank' rel='noreferrer'>my blog</a> and <a href='https://www.freecodecamp.org/news/author/gercocca/' target='_blank' rel='noreferrer'>FreeCodeCamp's platform</a>.</p>
                     :
-                        <>
-                            <p>Me gusta usar mi tiempo para aprender cosas nuevas constantemente y tratar de convertirme en el mejor desarrollador que pueda ser.</p>
-                            <p>Actualmente estoy estudiando ingeniería informática en <a href='https://uai.edu.ar/' target='_blank' rel='noreferrer'>UAI</a>. Además también escribo artículos sobre Javascript, React y programación en general en <a href='https://gercocca.hashnode.dev/' target='_blank' rel='noreferrer'>mi blog</a> y en <a href='https://www.freecodecamp.org/news/author/gercocca/' target='_blank' rel='noreferrer'>la plataforma de FreeCodeCamp</a>.</p>
-                        </>
+                        <p>Actualmente estoy estudiando ingeniería informática en <a href='https://uai.edu.ar/' target='_blank' rel='noreferrer'>UAI</a>. Además también escribo artículos sobre Javascript, React y programación en general en <a href='https://gercocca.hashnode.dev/' target='_blank' rel='noreferrer'>mi blog</a> y en <a href='https://www.freecodecamp.org/news/author/gercocca/' target='_blank' rel='noreferrer'>la plataforma de FreeCodeCamp</a>.</p>
                     }
 
                     {englishLanguage ?
