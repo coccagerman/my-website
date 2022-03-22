@@ -11,8 +11,9 @@ import ErrorBoundary from './ErrorBoundary'
 const Header = lazy(() => import ('./components/header/Header'))
 const AboutPage = lazy(() => import ('./components/aboutPage/AboutPage'))
 const ProjectsPage = lazy(() => import('./components/projectsPage/ProjectsPage'))
-const MyWebsiteProject = lazy(() => import('./components/projectsPage/myWebsiteProject/MyWebsiteProject'))
+const MixrProject = lazy(() => import('./components/projectsPage/mixrProject/MixrProject'))
 const HelprProject = lazy(() => import('./components/projectsPage/helprProject/HelprProject'))
+const MyWebsiteProject = lazy(() => import('./components/projectsPage/myWebsiteProject/MyWebsiteProject'))
 const CurriculumPage = lazy(() => import('./components/curriculumPage/CurriculumPage'))
 const BlogPage = lazy(() => import('./components/blogPage/BlogPage'))
 const ContactPage = lazy(() => import('./components/contactPage/ContactPage'))
@@ -35,6 +36,8 @@ export default function App() {
               <Route path='/projects/helpr' element={<Suspense fallback={<></>}><HelprProject /></Suspense>}/>
 
               <Route path='/projects/myWebsite' element={<Suspense fallback={<></>}><MyWebsiteProject /></Suspense>}/>
+
+              <Route path='/projects/mixr' element={<Suspense fallback={<></>}><MixrProject /></Suspense>}/>
 
               <Route path='/curriculum' element={<Suspense fallback={<></>}><CurriculumPage /></Suspense>}/>
 

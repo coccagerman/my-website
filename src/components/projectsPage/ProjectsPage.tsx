@@ -42,6 +42,31 @@ const ProjectsPage: React.FC = () => {
             </div>
 
             <div className='cards-container'>
+
+                <Link to='/projects/mixr'>
+                    <Card style={{ width: '20rem' }} className='card'>
+                        <div className='cardImg cardImg-mixr'></div>
+                        <Card.Body>
+                            <Card.Title className='cardTitle'>Mixr</Card.Title>
+                            <Card.Text className='cardText'>
+                                {englishLanguage ?
+                                    <>
+                                        <p>Mixr is a cocktails app, where users can explore cocktail recipes shared by other users and post their own.</p>
+                                        <p>Mobile project built with react-native, typescript and firebase.</p>
+                                    </>
+                                :
+                                    <>
+                                        <p>Mixr es una app de coctelería, donde los usuarios pueden buscar y publicar recetas de cócteles.</p>
+                                        <p>Proyecto mobile desarrollador con react-native, typescript y firebase.</p>
+                                    </>
+                                }
+                            </Card.Text>
+                            <div className='btn-container'>
+                                <button className='btn'>{englishLanguage ? 'See project' : 'Ver proyecto'}</button>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </Link>
                 
                 <Link to='/projects/helpr'>
                     <Card style={{ width: '20rem' }} className='card'>

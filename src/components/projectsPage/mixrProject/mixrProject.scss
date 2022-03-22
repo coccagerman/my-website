@@ -1,0 +1,56 @@
+.mixrProject {
+
+    h1 {
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .frontPage, .gif {
+        display: block;
+        margin: 1rem auto;
+        border-radius: 1.5%;
+        border: black solid 2px;
+    }
+
+    .frontPage {
+        width: 45rem;
+    }
+
+    .gif {
+        width: 20rem;
+    }
+
+    .gif-container {
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fullCode {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mixrProject {
+        .frontPage {
+            width: 20rem;
+        }
+    
+        .gif {
+            width: 15rem;
+        }
+
+        .gif-container {
+            flex-direction: column;
+        }
+    }
+}
