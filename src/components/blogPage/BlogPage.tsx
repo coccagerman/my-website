@@ -44,13 +44,13 @@ const BlogPage: React.FC = () => {
                             <>
                                 <p>I think one of the best ways to deepen your knowledge of any subject is to explain it to someone else. This is the purpose of my blog. Here I explore and write the different topics that I go through in my learning path as a developer.</p>
 
-                                <p>In this page you can see some of the last articles I wrote. To see all my articles you can visit <a href='https://gercocca.hashnode.dev/' target='_blank'>gercocca.hashnode.dev</a></p>
+                                <p>In this page you can see some of the last articles I wrote. To see all my articles you can visit <a href='https://gercocca.hashnode.dev/' target='_blank' rel='noreferrer'>gercocca.hashnode.dev</a></p>
                             </>
                         :
                             <>
                                 <p>Creo que una de las mejores maneras de aprender algo nuevo es tratar de explicárselo a otra persona. Esta es la finalidad de mi blog. Acá voy registrando y explorando en profundidad los distintos temas que voy recorriendo en mi camino de aprendizaje como desarrollador.</p>
 
-                                <p>En esta página podés ver algunos de los últimos artículos que escribí. Para ver todos mis artículos podés visitar <a href='https://gercocca.hashnode.dev/' target='_blank'>gercocca.hashnode.dev</a></p>
+                                <p>En esta página podés ver algunos de los últimos artículos que escribí. Para ver todos mis artículos podés visitar <a href='https://gercocca.hashnode.dev/' target='_blank' rel='noreferrer'>gercocca.hashnode.dev</a></p>
 
                                 <p>pd: Escribo en inglés para llegar a un público más amplio y matener fluidez con el idioma. ;)</p>
                             </>

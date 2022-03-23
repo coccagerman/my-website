@@ -36,6 +36,7 @@ import testingLibrary from '../../assets/testingLibrary-logo.png'
 import redis from '../../assets/redis-logo.png'
 import redux from '../../assets/redux-logo.jpeg'
 import sass from '../../assets/sass-logo.jpg'
+import styledComponents from '../../assets/styledComponents-logo.png'
 import typescript from '../../assets/typescript-logo.png'
 import websocket from '../../assets/websocket-logo.png'
 
@@ -167,6 +168,11 @@ const AboutPage: React.FC = () => {
                             <a href='https://sass-lang.com/' target='_blank' rel='noreferrer'><img src={sass} alt='sass icon' /></a>
                             <p>Sass</p>
                         </div>
+                        <div className='icon styledComponents'>
+                            <a href='https://styled-components.com/' target='_blank' rel='noreferrer'><img src={styledComponents} alt='styled components icon' /></a>
+                            <p>Styled components</p>
+                        </div>
+
                     </div>
                 </div>
 
