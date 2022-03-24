@@ -8,6 +8,7 @@ import { Icon } from '@iconify/react'
 import mypicture from '../../assets/mypicture.jpg'
 import androidStudio from '../../assets/androidStudio-logo.png'
 import apollo from '../../assets/apollo-logo.png'
+import aws from '../../assets/aws-logo.jpg'
 import axios from '../../assets/axios-logo.png'
 import bash from '../../assets/bash-logo.jpg'
 import cypress from '../../assets/cypress-logo.png'
@@ -211,6 +212,17 @@ const AboutPage: React.FC = () => {
                         <div className='icon'>
                             <a href='http://socket.io/' target='_blank' rel='noreferrer'><img src={websocket} alt='websocket icon' /></a>
                             <p>WebSockets</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='icon-section'>
+                    <h3>Cloud:</h3>
+
+                    <div className='icons-container'>
+                        <div className='icon'>
+                            <a href='https://aws.amazon.com/' target='_blank' rel='noreferrer'><img src={aws} alt='aws icon' /></a>
+                            <p>AWS</p>
                         </div>
                         <div className='icon'>
                             <a href='https://firebase.google.com/' target='_blank' rel='noreferrer'><img src={firebase} alt='firebase icon' /></a>
