@@ -23,7 +23,7 @@ const ProjectsPage: React.FC = () => {
                             
                             <p>Not only I find it fun, but this also helps me to constantly learn new things and better understand different topics.</p>
 
-                            <p>Here you can see some of the latest projects I've built. You can check all my projects on <a href='https://github.com/coccagerman' target='_blank'>github.com/coccagerman</a>.</p>
+                            <p>Here you can see some of the latest projects I've built. You can check all my projects on <a href='https://github.com/coccagerman' rel='noreferrer' target='_blank'>github.com/coccagerman</a>.</p>
                         </div>
                     </>
                 :
@@ -33,7 +33,7 @@ const ProjectsPage: React.FC = () => {
                             
                             <p>Lo hago porque me divierte y porque me encanta codear, y también porque es una excelente manera de aprender nuevas tecnologías constantemente y entender en profundidad distintos temas.</p>
 
-                            <p>Acá podés ver algunos de los últimos proyectos que construí. Para ver todos mis proyectos podés entrar a <a href='https://github.com/coccagerman' target='_blank'>github.com/coccagerman</a>.</p>
+                            <p>Acá podés ver algunos de los últimos proyectos que construí. Para ver todos mis proyectos podés entrar a <a href='https://github.com/coccagerman' rel='noreferrer' target='_blank'>github.com/coccagerman</a>.</p>
                         </div>
                     </>
                 }
@@ -42,6 +42,25 @@ const ProjectsPage: React.FC = () => {
             </div>
 
             <div className='cards-container'>
+
+                <Link to='/projects/shortr'>
+                    <Card style={{ width: '20rem' }} className='card'>
+                        <div className='cardImg cardImg-shortr'></div>
+                        <Card.Body>
+                            <Card.Title className='cardTitle'>Shortr</Card.Title>
+                            <Card.Text className='cardText'>
+                                {englishLanguage ?
+                                    <p>Shortr is a URL shortener I built. It's a fullstack project done with React, Axios and Styled components on the front and on the back.</p>
+                                :
+                                    <p>Shortr es un acortador URLs. Es un proyecto fullstack que desarrollé con React, Axios y Styled components en el front, y Node/Express y PostgreSQL en el back.</p>
+                                }
+                            </Card.Text>
+                            <div className='btn-container'>
+                                <button className='btn'>{englishLanguage ? 'See project' : 'Ver proyecto'}</button>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </Link>
 
                 <Link to='/projects/mixr'>
                     <Card style={{ width: '20rem' }} className='card'>

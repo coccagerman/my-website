@@ -59,9 +59,9 @@ const MyWebsiteProject: React.FC = () => {
 
             <div className='fullCode'>
                 {englishLanguage ?
-                    <p>Full code can be found at <a href='https://github.com/coccagerman/my-website' target='_blank'>github.com/coccagerman/my-website</a></p>
+                    <p>Full code can be found at <a href='https://github.com/coccagerman/my-website' rel='noreferrer' target='_blank'>github.com/coccagerman/my-website</a></p>
                 :
-                    <p>El código completo se encuentra en <a href='https://github.com/coccagerman/my-website' target='_blank'>github.com/coccagerman/my-website</a></p>
+                    <p>El código completo se encuentra en <a href='https://github.com/coccagerman/my-website' rel='noreferrer' target='_blank'>github.com/coccagerman/my-website</a></p>
                 }
             </div>
 

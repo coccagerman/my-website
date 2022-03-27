@@ -160,9 +160,9 @@ const HelprProject: React.FC = () => {
 
             <div className='fullCode'>
                 {englishLanguage ?
-                    <p>Full code can be found at <a href='https://github.com/coccagerman/helpr-front' target='_blank'>github.com/coccagerman/helpr-front</a> and <a href='https://github.com/coccagerman/helpr-back' target='_blank'>github.com/coccagerman/helpr-back</a></p>
+                    <p>Full code can be found at <a href='https://github.com/coccagerman/helpr-front' rel='noreferrer' target='_blank'>github.com/coccagerman/helpr-front</a> and <a href='https://github.com/coccagerman/helpr-back' rel='noreferrer' target='_blank'>github.com/coccagerman/helpr-back</a></p>
                 :
-                    <p>El código completo se encuentra en <a href='https://github.com/coccagerman/helpr-front' target='_blank'>github.com/coccagerman/helpr-front</a> y <a href='https://github.com/coccagerman/helpr-back' target='_blank'>github.com/coccagerman/helpr-back</a></p>
+                    <p>El código completo se encuentra en <a href='https://github.com/coccagerman/helpr-front' rel='noreferrer' target='_blank'>github.com/coccagerman/helpr-front</a> y <a href='https://github.com/coccagerman/helpr-back' rel='noreferrer' target='_blank'>github.com/coccagerman/helpr-back</a></p>
                 }
             </div>
             
