@@ -25,6 +25,7 @@ import html from '../../assets/html-logo.png'
 import javascript from '../../assets/javascript-logo.png'
 import jest from '../../assets/jest-logo.jpg'
 import knex from '../../assets/knex-logo.png'
+import linux from '../../assets/linux-logo.png'
 import mongo from '../../assets/mongo-logo.png'
 import mongoose from '../../assets/mongoose-logo.png'
 import node from '../../assets/node-logo.png'
@@ -281,6 +282,10 @@ const AboutPage: React.FC = () => {
                         <div className='icon'>
                             <a href='https://www.figma.com/' target='_blank' rel='noreferrer'><img src={figma} alt='figma icon' /></a>
                             <p>Figma</p>
+                        </div>
+                        <div className='icon'>
+                            <a href='https://en.wikipedia.org/wiki/Linux' target='_blank' rel='noreferrer'><img src={linux} alt='linux icon' /></a>
+                            <p>GNU/Linux</p>
                         </div>
                     </div>
                 </div>

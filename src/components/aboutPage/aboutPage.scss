@@ -285,9 +285,17 @@
                         }
                     }
     
-                    .testingLibrary, .androidStudio, .styledComponents {
+                    .testingLibrary, .androidStudio {
                         p {
-                            bottom: -3.5rem;
+                            bottom: -2rem;
+                            font-size: .9rem;
+                        }
+                    }
+
+                    .styledComponents {
+                        p {
+                            bottom: -3rem;
+                            font-size: .9rem;
                         }
                     }
                 }
