@@ -13,6 +13,7 @@ import axios from '../../assets/axios-logo.png'
 import bash from '../../assets/bash-logo.jpg'
 import cypress from '../../assets/cypress-logo.png'
 import css from '../../assets/css-logo.png'
+import django from '../../assets/django-logo.jpg'
 import express from '../../assets/express-logo.png'
 import expo from '../../assets/expo-logo.png'
 import firebase from '../../assets/firebase-logo.png'
@@ -30,6 +31,7 @@ import mongo from '../../assets/mongo-logo.png'
 import mongoose from '../../assets/mongoose-logo.png'
 import node from '../../assets/node-logo.png'
 import npm from '../../assets/npm-logo.png'
+import python from '../../assets/python-logo.jpg'
 import postgre from '../../assets/postgre-logo.jpg'
 import postman from '../../assets/postman-logo.png'
 import react from '../../assets/react-logo.png'
@@ -118,14 +120,13 @@ const AboutPage: React.FC = () => {
                             <p>Typescript</p>
                         </div>
                         <div className='icon'>
-                            <a href='https://en.wikipedia.org/wiki/Bash_(Unix_shell)' target='_blank' rel='noreferrer'><img src={bash} alt='bash icon' /></a>
-                            <p>Bash</p>
+                            <a href='https://www.python.org/' target='_blank' rel='noreferrer'><img src={python} alt='python icon' /></a>
+                            <p>Python</p>
                         </div>
                     </div>
                 </div>
 
                 <div className='icon-section'>
-
                 
                     <h3>Front end & mobile:</h3>
 
@@ -182,6 +183,10 @@ const AboutPage: React.FC = () => {
                     <h3>Back end:</h3>
 
                     <div className='icons-container'>
+                        <div className='icon'>
+                            <a href='https://www.djangoproject.com/' target='_blank' rel='noreferrer'><img src={django} alt='django icon' /></a>
+                            <p>Django</p>
+                        </div>
                         <div className='icon'>
                             <a href='https://nodejs.org/' target='_blank' rel='noreferrer'><img src={node} alt='node icon' /></a>
                             <p>Node</p>
@@ -282,6 +287,10 @@ const AboutPage: React.FC = () => {
                         <div className='icon'>
                             <a href='https://www.figma.com/' target='_blank' rel='noreferrer'><img src={figma} alt='figma icon' /></a>
                             <p>Figma</p>
+                        </div>
+                        <div className='icon'>
+                            <a href='https://en.wikipedia.org/wiki/Bash_(Unix_shell)' target='_blank' rel='noreferrer'><img src={bash} alt='bash icon' /></a>
+                            <p>Bash</p>
                         </div>
                         <div className='icon'>
                             <a href='https://en.wikipedia.org/wiki/Linux' target='_blank' rel='noreferrer'><img src={linux} alt='linux icon' /></a>
