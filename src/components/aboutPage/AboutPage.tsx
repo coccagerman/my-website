@@ -11,6 +11,7 @@ import apollo from '../../assets/apollo-logo.png'
 import aws from '../../assets/aws-logo.jpg'
 import axios from '../../assets/axios-logo.png'
 import bash from '../../assets/bash-logo.jpg'
+import bootstrap from '../../assets/bootstrap-logo.png'
 import cypress from '../../assets/cypress-logo.png'
 import css from '../../assets/css-logo.png'
 import django from '../../assets/django-logo.jpg'
@@ -29,6 +30,7 @@ import knex from '../../assets/knex-logo.png'
 import linux from '../../assets/linux-logo.png'
 import mongo from '../../assets/mongo-logo.png'
 import mongoose from '../../assets/mongoose-logo.png'
+import mui from '../../assets/mui-logo.png'
 import node from '../../assets/node-logo.png'
 import npm from '../../assets/npm-logo.png'
 import python from '../../assets/python-logo.jpg'
@@ -174,6 +176,14 @@ const AboutPage: React.FC = () => {
                         <div className='icon styledComponents'>
                             <a href='https://styled-components.com/' target='_blank' rel='noreferrer'><img src={styledComponents} alt='styled components icon' /></a>
                             <p>Styled components</p>
+                        </div>
+                        <div className='icon bootstrap'>
+                            <a href='https://getbootstrap.com/' target='_blank' rel='noreferrer'><img src={bootstrap} alt='bootstrap icon' /></a>
+                            <p>Bootstrap</p>
+                        </div>
+                        <div className='icon mui'>
+                            <a href='https://mui.com/' target='_blank' rel='noreferrer'><img src={mui} alt='material UI icon' /></a>
+                            <p>Material UI</p>
                         </div>
 
                     </div>

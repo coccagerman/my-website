@@ -31,9 +31,9 @@ const ContactPage: React.FC = () => {
             </div>
 
             <div className='networks-container'>
-                <p><span>Linkedin:</span> <a href='https://www.linkedin.com/in/germancocca/' target='_blank'>linkedin.com/in/germancocca</a></p>
-                <p><span>Github:</span> <a href='https://github.com/coccagerman' target='_blank'>github.com/coccagerman</a></p>
-                <p><span>Blog:</span> <a href='https://gercocca.hashnode.dev/' target='_blank'>gercocca.hashnode.dev</a></p>
+                <p><span>Linkedin:</span> <a href='https://www.linkedin.com/in/germancocca/' rel='noreferrer' target='_blank'>linkedin.com/in/germancocca</a></p>
+                <p><span>Github:</span> <a href='https://github.com/coccagerman' rel='noreferrer' target='_blank'>github.com/coccagerman</a></p>
+                <p><span>Blog:</span> <a href='https://gercocca.hashnode.dev/' rel='noreferrer' target='_blank'>gercocca.hashnode.dev</a></p>
             </div>
             
             <div className='btn-container'>
