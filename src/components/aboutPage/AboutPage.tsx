@@ -110,7 +110,7 @@ const AboutPage: React.FC = () => {
             <div className='stack content-section' id='stack'>
                 <h2>{englishLanguage ? 'My stack' : 'Mi stack'}</h2>
                 <div className='icon-section firstIcon-section'>
-                    <h3>{englishLanguage ? 'Lenguages:' : 'Lenguajes:'}</h3>
+                    <h3>{englishLanguage ? 'Languages:' : 'Lenguajes:'}</h3>
 
                     <div className='icons-container'>
                         <div className='icon'>
